@@ -1,0 +1,1545 @@
+2016/12/16 09:23:55 [error] 6#6: *1 [lua] common.lua:216: INPUT(): test, client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/16 09:27:09 [error] 6#6: *2 [lua] common.lua:216: INPUT(): test, client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/16 09:28:10 [error] 6#6: *3 [lua] common.lua:216: INPUT(): test, client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/16 09:43:21 [error] 6#6: *1 lua entry thread aborted: runtime error: /data/common.lua:161: bad argument #1 to 'pairs' (table expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	/data/common.lua:161: in function 'get_keys'
+	/data/common.lua:171: in function 'gen_auth'
+	/data/common.lua:261: in function 'main'
+	/data/lapi/recharge.lua:20: in function </data/lapi/recharge.lua:1>, client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/16 13:50:37 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: FATAL: no pg_hba.conf entry for host "172.17.0.2", user "usr_fin_master", database "droi_fin_master", client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/16 13:52:50 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: FATAL: no pg_hba.conf entry for host "172.17.0.2", user "usr_fin_master", database "droi_fin_master", client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/16 13:52:50 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: FATAL: no pg_hba.conf entry for host "172.17.0.2", user "usr_fin_master", database "droi_fin_master", client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/16 14:01:46 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: FATAL: no pg_hba.conf entry for host "172.17.0.2", user "usr_fin_master", database "droi_fin_master", client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/16 14:01:46 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: FATAL: no pg_hba.conf entry for host "172.17.0.2", user "usr_fin_master", database "droi_fin_master", client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/16 14:02:28 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: ERROR: syntax error at or near "appid" (52), client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/19 03:56:55 [error] 6#6: *3 [lua] log.lua:22: log(): [MESSAGE]: ERROR: syntax error at or near "appid" (52), client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/19 03:57:17 [error] 6#6: *5 [lua] log.lua:22: log(): [MESSAGE]: ERROR: syntax error at or near "appid" (52), client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/19 06:42:05 [error] 6#6: *2 lua entry thread aborted: runtime error: /data/common.lua:294: attempt to index global 'common' (a nil value)
+stack traceback:
+coroutine 0:
+	/data/common.lua: in function 'main'
+	/data/lapi/record.lua:23: in function </data/lapi/record.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:10:11 [error] 6#6: *3 open() "/usr/local/openresty/nginx/html/lapi/testData" failed (2: No such file or directory), client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:10:26 [error] 6#6: *1 open() "/usr/local/openresty/nginx/html/lapi/testData" failed (2: No such file or directory), client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:13:25 [error] 7#7: *1 open() "/usr/local/openresty/nginx/html/lapi/testData" failed (2: No such file or directory), client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:14:32 [error] 6#6: *1 lua entry thread aborted: runtime error: /data/common.lua:294: attempt to index global 'common' (a nil value)
+stack traceback:
+coroutine 0:
+	/data/common.lua: in function 'main'
+	/data/lapi/testData.lua:22: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:15:11 [error] 6#6: *1 lua entry thread aborted: runtime error: /data/common.lua:82: don't know how to escape value: nil
+stack traceback:
+coroutine 0:
+	[C]: in function 'escape_literal'
+	/data/common.lua:82: in function 'check_sign'
+	/data/common.lua:301: in function 'main'
+	/data/lapi/testData.lua:22: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:15:46 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: response is not a table, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:16:29 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: response is not a table, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:16:38 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: response is not a table, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:17:10 [error] 7#7: *1 lua entry thread aborted: runtime error: /data/lapi/testData.lua:18: attempt to call field 'testData' (a nil value)
+stack traceback:
+coroutine 0:
+	/data/lapi/testData.lua: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/testData.lua:22: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:18:05 [error] 6#6: *1 lua entry thread aborted: runtime error: /data/finance.lua:52: attempt to index global 'cjson' (a nil value)
+stack traceback:
+coroutine 0:
+	/data/finance.lua: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/testData.lua:22: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:18:42 [error] 8#8: *1 lua entry thread aborted: runtime error: /data/finance.lua:35: bad argument #1 to 'pairs' (table expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	/data/finance.lua:35: in function 'fields_val'
+	/data/finance.lua:55: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/testData.lua:22: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:21:35 [error] 6#6: *1 lua entry thread aborted: runtime error: /data/finance.lua:36: bad argument #1 to 'pairs' (table expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	/data/finance.lua:36: in function 'fields_val'
+	/data/finance.lua:57: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/testData.lua:22: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:23:37 [error] 7#7: *1 lua entry thread aborted: runtime error: /data/finance.lua:36: bad argument #1 to 'pairs' (table expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	/data/finance.lua:36: in function 'fields_val'
+	/data/finance.lua:57: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/testData.lua:22: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:25:35 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 2, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:25:35 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {tab:"fin_exrate_config",
+data:"{'coin_id':1,'coin_name':'豆子','is_open':1,'app_id'=1,'app_key':'test','signature':'signature','exchange_rate':10,'cash_deposit':100,'operator_id':1,'operate_time':1482131396}"
+}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:26:36 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 2, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:26:36 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {tab:"fin_exrate_config",
+data:"{coin_id:1,coin_name:'豆子',is_open:1,app_id=1,app_key:'test',signature:'signature',exchange_rate:10,cash_deposit:100,operator_id:1,operate_time:1482131396}"
+}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:27:01 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 2, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:27:01 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {tab:"fin_exrate_config",
+data:"{coin_id:1,coin_name:'豆子',is_open:1,app_id=1,app_key:'test',signature:'signature',exchange_rate:10,cash_deposit:100,operator_id:1,operate_time:1482131396}"
+}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:34:30 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 2, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:34:30 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {tab:"fin_exrate_config",
+data:"{coin_id:1,coin_name:'豆子',is_open:1,app_id=1,app_key:'test',signature:'signature',exchange_rate:10,cash_deposit:100,operator_id:1,operate_time:1482131396}"
+}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:34:54 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 2, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:34:54 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {tab:"fin_exrate_config",
+data:{
+coin_id:1,coin_name:'豆子',is_open:1,app_id=1,app_key:'test',signature:'signature',exchange_rate:10,cash_deposit:100,operator_id:1,operate_time:1482131396
+}
+}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:35:03 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 2, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:35:03 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {tab:"fin_exrate_config",
+data:{
+coin_id:1,coin_name:'豆子',is_open:1,app_id=1,app_key:'test',signature:'signature',exchange_rate:10,cash_deposit:100,operator_id:1,operate_time:1482131396
+}
+}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:36:11 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 2, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:36:11 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {tab:"fin_exrate_config",
+data:{
+coin_id:1,coin_name:"豆子",is_open:1,app_id=1,app_key:"test",signature:"signature",exchange_rate:10,cash_deposit:100,operator_id:1,operate_time:1482131396
+}
+}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:36:55 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 2, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:36:55 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {tab:"fin_exrate_config"
+
+}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:37:31 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 3, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:37:31 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): { tab = 'test'}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:37:41 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 3, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:37:41 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): { tab:test}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:40:06 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 3, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:40:06 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): { tab:"test"}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:41:33 [error] 6#6: *2 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 3, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:41:33 [error] 6#6: *2 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): { tab:"test"}, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:42:58 [error] 6#6: *2 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 2, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:42:58 [error] 6#6: *2 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {appid:1}, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:44:49 [error] 6#6: *4 [lua] log.lua:22: log(): [MESSAGE]: ERROR: syntax error at or near "appid" (52), client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/19 07:44:56 [error] 6#6: *7 [lua] log.lua:22: log(): [MESSAGE]: ERROR: syntax error at or near "appid" (52), client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/19 07:45:28 [error] 6#6: *9 [lua] log.lua:22: log(): [MESSAGE]: ERROR: syntax error at or near "appid" (52), client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/19 07:48:15 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 2, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:48:15 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {appid:1}, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:50:11 [error] 6#6: *2 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 2, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:50:11 [error] 6#6: *2 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {appid=1}, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:50:41 [error] 6#6: *3 [lua] log.lua:22: log(): [MESSAGE]: ERROR: syntax error at or near "appid" (52), client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/19 07:51:38 [error] 6#6: *6 [lua] log.lua:22: log(): [MESSAGE]: ERROR: syntax error at or near "appid" (52), client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/19 07:51:52 [error] 6#6: *8 [lua] log.lua:22: log(): [MESSAGE]: ERROR: syntax error at or near "appid" (52), client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/19 07:55:08 [error] 6#6: *10 [lua] log.lua:22: log(): [MESSAGE]: ERROR: syntax error at or near "appid" (52), client: 192.168.3.169, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105"
+2016/12/19 07:58:18 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 2, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:58:18 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {appid=1}, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:58:26 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 2, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:58:26 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {appid=1}, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:58:49 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected colon but found invalid token at character 9, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:58:49 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {"appid"=1}, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 07:58:59 [error] 6#6: *1 lua entry thread aborted: runtime error: /data/common.lua:103: attempt to get length of local 'val' (a number value)
+stack traceback:
+coroutine 0:
+	/data/common.lua: in function 'param_check'
+	/data/common.lua:173: in function 'check_param'
+	/data/common.lua:281: in function 'main'
+	/data/lapi/balance.lua:24: in function </data/lapi/balance.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:00:24 [error] 7#7: *1 lua entry thread aborted: runtime error: /data/common.lua:103: attempt to get length of local 'val' (a number value)
+stack traceback:
+coroutine 0:
+	/data/common.lua: in function 'param_check'
+	/data/common.lua:173: in function 'check_param'
+	/data/common.lua:281: in function 'main'
+	/data/lapi/balance.lua:24: in function </data/lapi/balance.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:01:23 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 2, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:01:23 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {appid:1}, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:26:55 [error] 6#6: *1 lua entry thread aborted: runtime error: /data/finance.lua:36: bad argument #1 to 'pairs' (table expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	/data/finance.lua:36: in function 'fields_val'
+	/data/finance.lua:61: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/testData.lua:23: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:27:16 [error] 6#6: *3 lua entry thread aborted: runtime error: /data/finance.lua:36: bad argument #1 to 'pairs' (table expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	/data/finance.lua:36: in function 'fields_val'
+	/data/finance.lua:61: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/testData.lua:23: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:27:25 [error] 7#7: *1 lua entry thread aborted: runtime error: /data/finance.lua:36: bad argument #1 to 'pairs' (table expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'pairs'
+	/data/finance.lua:36: in function 'fields_val'
+	/data/finance.lua:61: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/testData.lua:23: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:31:03 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: xxxxxxxxxx: [REQUEST]: {"data":{"is_open":1,"signature":"signature","coin_id":1,"app_key":"test","coin_name":"douzi","cash_deposit":100,"operator_id":1,"operate_time":1482134861,"exchange_rate":10,"app_id":1},"tab":"fin_exrate_config"}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:31:46 [error] 7#7: *1 lua entry thread aborted: runtime error: /data/lapi/testData.lua:18: bad argument #1 to 'log' (bad log level: -1)
+stack traceback:
+coroutine 0:
+	[C]: in function 'log'
+	/data/lapi/testData.lua:18: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/testData.lua:23: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:33:23 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: xxxxxxxxxxxxxx{"is_open":1,"signature":"signature","coin_id":1,"app_key":"test","coin_name":"douzi","cash_deposit":100,"operator_id":1,"operate_time":1482134861,"exchange_rate":10,"app_id":1}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:34:17 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: xxxxxxxxxxxxxx{"is_open":1,"signature":"signature","coin_id":1,"app_key":"test","coin_name":"douzi","cash_deposit":100,"operator_id":1,"operate_time":1482134861,"exchange_rate":10,"app_id":1}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:34:17 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:insert into fin_exrate_config(is_open,signature,coin_id,app_key,coin_name,cash_deposit,operator_id,operate_time,exchange_rate,app_id) values(1','signature','1','test','douzi','100','1','1482134861','10','1) ;, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:42:30 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: xxxxxxxxxxxxxx{"is_open":1,"signature":"signature","coin_id":1,"app_key":"test","coin_name":"douzi","cash_deposit":100,"operator_id":1,"operate_time":1482134861,"exchange_rate":10,"app_id":1}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:42:30 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:insert into fin_exrate_config(is_open,signature,coin_id,app_key,coin_name,cash_deposit,operator_id,operate_time,exchange_rate,app_id) values(1','signature','1','test','douzi','100','1','1482134861','10','1) ;, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:52:38 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: xxxxxxxxxxxxxx{"is_open":1,"signature":"signature","coin_id":1,"app_key":"test","coin_name":"douzi","cash_deposit":100,"operator_id":1,"operate_time":1482134861,"exchange_rate":10,"app_id":1}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:52:38 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:insert into fin_exrate_config(is_open,signature,coin_id,app_key,coin_name,cash_deposit,operator_id,operate_time,exchange_rate,app_id) values(1,'signature',1,'test','douzi',100,1,1482134861,101) ;, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:53:02 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: xxxxxxxxxxxxxx{"is_open":1,"signature":"signature","coin_id":1,"app_key":"test","coin_name":"douzi","cash_deposit":100,"operator_id":1,"operate_time":1482134861,"exchange_rate":10,"app_id":1}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:53:02 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:insert into fin_exrate_config(is_open,signature,coin_id,app_key,coin_name,cash_deposit,operator_id,operate_time,exchange_rate,app_id) values(1,'signature',1,'test','douzi',100,1,1482134861,101) ;, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:55:07 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: xxxxxxxxxxxxxx{"is_open":1,"signature":"signature","coin_id":1,"app_key":"test","coin_name":"douzi","cash_deposit":100,"operator_id":1,"operate_time":1482134861,"exchange_rate":10,"app_id":1}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:55:07 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:insert into fin_exrate_config(is_open,signature,coin_id,app_key,coin_name,cash_deposit,operator_id,operate_time,exchange_rate,app_id) values(1,'signature',1,'test','douzi',100,1,1482134861,101) ;, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:55:55 [error] 8#8: *1 [lua] log.lua:22: log(): [MESSAGE]: xxxxxxxxxxxxxx{"is_open":1,"signature":"signature","coin_id":1,"app_key":"test","coin_name":"douzi","cash_deposit":100,"operator_id":1,"operate_time":1482134861,"exchange_rate":10,"app_id":1}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:55:55 [error] 8#8: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:insert into fin_exrate_config(is_open,signature,coin_id,app_key,coin_name,cash_deposit,operator_id,operate_time,exchange_rate,app_id) values(1,'signature',1,'test','douzi',100,1,1482134861,10,1) ;, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:58:28 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: xxxxxxxxxxxxxx{"is_open":1,"signature":"signature","coin_id":1,"app_key":"test","coin_name":"douzi","cash_deposit":100,"operator_id":1,"operate_time":1482134861,"exchange_rate":10,"app_id":1}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:58:28 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:insert into fin_exrate_config(is_open,signature,coin_id,app_key,coin_name,cash_deposit,operator_id,operate_time,exchange_rate,app_id) values(1,'signature',1,'test','douzi',100,1,1482134861,10,1) ;, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:58:28 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:nil, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 08:58:28 [error] 6#6: *1 lua entry thread aborted: runtime error: /data/finance.lua:80: attempt to concatenate local 'res1' (a nil value)
+stack traceback:
+coroutine 0:
+	/data/finance.lua: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/testData.lua:22: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:01:28 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: xxxxxxxxxxxxxx{"is_open":1,"signature":"signature","coin_id":1,"app_key":"test","coin_name":"douzi","cash_deposit":100,"operator_id":1,"operate_time":1482134861,"exchange_rate":10,"app_id":1}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:01:28 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:insert into fin_exrate_config(is_open,signature,coin_id,app_key,coin_name,cash_deposit,operator_id,operate_time,exchange_rate,app_id) values(1,'signature',1,'test','douzi',100,1,1482134861,10,1) ;, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:01:28 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:nil, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:01:28 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_strerrerrerr1:ERROR: column "operate_time" is of type timestamp without time zone but expression is of type integer (179), client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:01:57 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: xxxxxxxxxxxxxx{"is_open":1,"signature":"signature","coin_id":1,"app_key":"test","coin_name":"douzi","cash_deposit":100,"operator_id":1,"exchange_rate":10,"app_id":1}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:01:57 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:insert into fin_exrate_config(is_open,signature,coin_id,app_key,coin_name,cash_deposit,operator_id,exchange_rate,app_id) values(1,'signature',1,'test','douzi',100,1,10,1) ;, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:01:57 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:table, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:01:57 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_strerrerrerr1:1, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:02:52 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected value but found invalid token at character 212, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:02:52 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {"tab":"fin_exrate_config",
+"data":{
+"coin_id":1,
+"coin_name":"douzi",
+"is_open":1,
+"app_id":1,
+"app_key":"test",
+"signature":"signature",
+"exchange_rate":10,
+"cash_deposit":100,
+"operator_id":1,
+"operate_time":now()
+}
+}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:05:36 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: xxxxxxxxxxxxxx{"is_open":1,"signature":"signature","coin_id":2,"app_key":"test","coin_name":"douzi2","cash_deposit":100,"operator_id":2,"operate_time":"NOW()","exchange_rate":100,"app_id":2}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:05:36 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:insert into fin_exrate_config(is_open,signature,coin_id,app_key,coin_name,cash_deposit,operator_id,operate_time,exchange_rate,app_id) values(1,'signature',2,'test','douzi2',100,2,now(),100,2) ;, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:05:36 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:table, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:05:36 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_strerrerrerr1:1, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:32:44 [error] 6#6: *3 [lua] log.lua:22: log(): [MESSAGE]: xxxxxxxxxxxxxx{"user_id":"humin","operate_time":"NOW()","coin_num":5000,"coin_id":1}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:32:44 [error] 6#6: *3 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:insert into fin_user_coins(user_id,operate_time,coin_num,coin_id) values('humin',now(),5000,1) ;, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:32:44 [error] 6#6: *3 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:table, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:32:44 [error] 6#6: *3 [lua] log.lua:22: log(): [MESSAGE]: sql_strerrerrerr1:1, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:34:36 [error] 6#6: *5 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected value but found invalid token at character 10, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:34:36 [error] 6#6: *5 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {"appid":'1',"sign":"sign","role":1,"userid":"humin","feetype":1}, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:36:09 [error] 6#6: *5 [lua] log.lua:22: log(): [MESSAGE]: response is not a table, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:40:15 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_user_coins where user_id = humin;, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:41:20 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_user_coins where user_id = 'humin';, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:41:20 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_exrate_config where coin_id IN (1) ;, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:41:39 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:insert into fin_user_coins(user_id,operate_time,coin_num,coin_id) values('humin',now(),1000,2) ;, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:41:39 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_str1:table, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:41:39 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql_strerrerrerr1:1, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:41:41 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_user_coins where user_id = 'humin';, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:41:41 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_exrate_config where coin_id IN (1,2) ;, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:42:25 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_user_coins where user_id = 'humin';, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:42:25 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_exrate_config where coin_id IN (1,2) ;, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:44:33 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_user_coins where user_id = 'humin';, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:44:33 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_exrate_config where coin_id IN (1,2) ;, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:44:33 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: xxxxx::[{"is_open":1,"signature":"signature","coin_id":1,"app_key":"test","coin_name":"douzi","cash_deposit":100,"operator_id":1,"exchange_rate":10,"app_id":"1"},{"is_open":1,"signature":"signature","coin_id":2,"app_key":"test","coin_name":"douzi2","cash_deposit":100,"operator_id":2,"operate_time":"2016-12-19 09:05:36.791724","exchange_rate":100,"app_id":"2"}], client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:44:33 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: obj::[100], client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:44:33 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: res1::[{"user_id":"humin","operate_time":"2016-12-19 09:32:44.550176","coin_num":5000,"coin_id":1},{"user_id":"humin","operate_time":"2016-12-19 09:41:39.004834","coin_num":1000,"coin_id":2}], client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:53:39 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_user_coins where user_id = 'humin';, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:53:39 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_exrate_config where coin_id IN (1,2) ;, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:53:39 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: xxxxx::[{"is_open":1,"signature":"signature","coin_id":1,"app_key":"test","coin_name":"douzi","cash_deposit":100,"operator_id":1,"exchange_rate":10,"app_id":"1"},{"is_open":1,"signature":"signature","coin_id":2,"app_key":"test","coin_name":"douzi2","cash_deposit":100,"operator_id":2,"operate_time":"2016-12-19 09:05:36.791724","exchange_rate":100,"app_id":"2"}], client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:53:39 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: obj::{"cid:1":100}, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:53:39 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: res1::[{"user_id":"humin","operate_time":"2016-12-19 09:32:44.550176","coin_num":5000,"coin_id":1},{"user_id":"humin","operate_time":"2016-12-19 09:41:39.004834","coin_num":1000,"coin_id":2}], client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:56:13 [error] 7#7: *3 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_user_coins where user_id = 'humin';, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:56:13 [error] 7#7: *3 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_exrate_config where coin_id IN (1,2) ;, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:56:13 [error] 7#7: *3 [lua] log.lua:22: log(): [MESSAGE]: xxxxx::[{"is_open":1,"signature":"signature","coin_id":1,"app_key":"test","coin_name":"douzi","cash_deposit":100,"operator_id":1,"exchange_rate":10,"app_id":"1"},{"is_open":1,"signature":"signature","coin_id":2,"app_key":"test","coin_name":"douzi2","cash_deposit":100,"operator_id":2,"operate_time":"2016-12-19 09:05:36.791724","exchange_rate":100,"app_id":"2"}], client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:56:13 [error] 7#7: *3 lua entry thread aborted: runtime error: /data/finance.lua:141: attempt to concatenate local 'cid' (a nil value)
+stack traceback:
+coroutine 0:
+	/data/finance.lua: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/balance.lua:24: in function </data/lapi/balance.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:57:13 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_user_coins where user_id = 'humin';, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:57:13 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_exrate_config where coin_id IN (1,2) ;, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:57:13 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: xxxxx::[{"is_open":1,"signature":"signature","coin_id":1,"app_key":"test","coin_name":"douzi","cash_deposit":100,"operator_id":1,"exchange_rate":10,"app_id":"1"},{"is_open":1,"signature":"signature","coin_id":2,"app_key":"test","coin_name":"douzi2","cash_deposit":100,"operator_id":2,"operate_time":"2016-12-19 09:05:36.791724","exchange_rate":100,"app_id":"2"}], client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:57:13 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: obj::{"cid:1":10}, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:57:13 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: res1::[{"user_id":"humin","operate_time":"2016-12-19 09:32:44.550176","coin_num":5000,"coin_id":1},{"user_id":"humin","operate_time":"2016-12-19 09:41:39.004834","coin_num":1000,"coin_id":2}], client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:57:13 [error] 7#7: *1 lua entry thread aborted: runtime error: /data/finance.lua:155: attempt to perform arithmetic on a nil value
+stack traceback:
+coroutine 0:
+	/data/finance.lua: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/balance.lua:24: in function </data/lapi/balance.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:57:39 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_user_coins where user_id = 'humin';, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:57:39 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_exrate_config where coin_id IN (1,2) ;, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:57:39 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: xxxxx::[{"is_open":1,"signature":"signature","coin_id":1,"app_key":"test","coin_name":"douzi","cash_deposit":100,"operator_id":1,"exchange_rate":10,"app_id":"1"},{"is_open":1,"signature":"signature","coin_id":2,"app_key":"test","coin_name":"douzi2","cash_deposit":100,"operator_id":2,"operate_time":"2016-12-19 09:05:36.791724","exchange_rate":100,"app_id":"2"}], client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:57:39 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: obj::{"cid:1":10}, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:57:39 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: res1::[{"user_id":"humin","operate_time":"2016-12-19 09:32:44.550176","coin_num":5000,"coin_id":1},{"user_id":"humin","operate_time":"2016-12-19 09:41:39.004834","coin_num":1000,"coin_id":2}], client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:57:49 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_user_coins where user_id = 'humin';, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:57:49 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_exrate_config where coin_id IN (1,2) ;, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:57:49 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: xxxxx::[{"is_open":1,"signature":"signature","coin_id":1,"app_key":"test","coin_name":"douzi","cash_deposit":100,"operator_id":1,"exchange_rate":10,"app_id":"1"},{"is_open":1,"signature":"signature","coin_id":2,"app_key":"test","coin_name":"douzi2","cash_deposit":100,"operator_id":2,"operate_time":"2016-12-19 09:05:36.791724","exchange_rate":100,"app_id":"2"}], client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:57:49 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: obj::{"cid:2":100}, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 09:57:49 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: res1::[{"user_id":"humin","operate_time":"2016-12-19 09:32:44.550176","coin_num":5000,"coin_id":1},{"user_id":"humin","operate_time":"2016-12-19 09:41:39.004834","coin_num":1000,"coin_id":2}], client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:01:53 [error] 6#6: *3 lua entry thread aborted: runtime error: /data/lapi/record.lua:20: attempt to index global 'finance' (a nil value)
+stack traceback:
+coroutine 0:
+	/data/lapi/record.lua: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/record.lua:23: in function </data/lapi/record.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:03:24 [error] 7#7: *1 lua entry thread aborted: runtime error: error loading module 'finance' from file '/data/finance.lua':
+	/data/finance.lua:163: '<eof>' expected near 'end'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/data/lapi/record.lua:5: in function </data/lapi/record.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:04:49 [error] 8#8: *1 lua entry thread aborted: runtime error: error loading module 'finance' from file '/data/finance.lua':
+	/data/finance.lua:163: '<eof>' expected near 'end'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/data/lapi/record.lua:5: in function </data/lapi/record.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:05:48 [error] 7#7: *1 lua entry thread aborted: runtime error: error loading module 'finance' from file '/data/finance.lua':
+	/data/finance.lua:163: '<eof>' expected near 'end'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/data/lapi/record.lua:5: in function </data/lapi/record.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:06:26 [error] 7#7: *2 lua entry thread aborted: runtime error: error loading module 'finance' from file '/data/finance.lua':
+	/data/finance.lua:163: '<eof>' expected near 'end'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/data/lapi/balance.lua:6: in function </data/lapi/balance.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:07:27 [error] 7#7: *1 lua entry thread aborted: runtime error: error loading module 'finance' from file '/data/finance.lua':
+	/data/finance.lua:161: '<eof>' expected near 'end'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/data/lapi/balance.lua:6: in function </data/lapi/balance.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/balance HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:30:38 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found T_OBJ_END at character 33, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:30:38 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {
+"appid":"1",   "sign":"sign",
+}, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:32:22 [error] 8#8: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_user_coins_deallog where user_id='humin'andoperator_id='1' order by id DES limit 20 offset 0 ;, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:32:22 [error] 8#8: *1 lua entry thread aborted: runtime error: /data/common.lua:206: attempt to concatenate a table value
+stack traceback:
+coroutine 0:
+	/data/common.lua: in function 'gen_auth'
+	/data/common.lua:259: in function 'OUTPUT'
+	/data/common.lua:312: in function 'main'
+	/data/lapi/record.lua:28: in function </data/lapi/record.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:34:31 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_user_coins_deallog where user_id='humin'andoperator_id='1' order by id DES limit 20 offset 0 ;, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:34:31 [error] 6#6: *1 lua entry thread aborted: runtime error: /data/common.lua:206: attempt to concatenate a table value
+stack traceback:
+coroutine 0:
+	/data/common.lua: in function 'gen_auth'
+	/data/common.lua:259: in function 'OUTPUT'
+	/data/common.lua:312: in function 'main'
+	/data/lapi/record.lua:28: in function </data/lapi/record.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:38:28 [error] 8#8: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_user_coins_deallog where user_id='humin'andoperator_id='1' order by id DES limit 20 offset 0 ;, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:38:28 [error] 8#8: *1 [lua] log.lua:22: log(): [MESSAGE]: response body json encode error: {"data":{},"msg":"OK","code":0,"count":0}, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:38:28 [error] 8#8: *1 lua entry thread aborted: runtime error: /data/common.lua:206: attempt to concatenate a table value
+stack traceback:
+coroutine 0:
+	/data/common.lua: in function 'gen_auth'
+	/data/common.lua:259: in function 'OUTPUT'
+	/data/common.lua:312: in function 'main'
+	/data/lapi/record.lua:28: in function </data/lapi/record.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:39:35 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: sql::select * from fin_user_coins_deallog where user_id='humin'andoperator_id='1' order by id DES limit 20 offset 0 ;, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:39:35 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: response body json encode error: {"code":0,"msg":"OK"}, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 10:54:02 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: response body json encode error: {"msg":"OK","code":0,"count":0}, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 11:23:17 [notice] 1#1: using the "epoll" event method
+2016/12/19 11:23:17 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 11:23:17 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 11:23:17 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 11:23:17 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 11:23:17 [notice] 1#1: start worker processes
+2016/12/19 11:23:17 [notice] 1#1: start worker process 6
+2016/12/19 11:23:34 [debug] 6#6: *1 [lua] finance.lua:105: handle(): sssssssss
+2016/12/19 13:15:19 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:15:19 [notice] 6#6: exiting
+2016/12/19 13:15:19 [notice] 6#6: exit
+2016/12/19 13:15:19 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:15:19 [notice] 1#1: worker process 6 exited with code 0
+2016/12/19 13:15:19 [notice] 1#1: exit
+2016/12/19 13:15:20 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:15:20 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:15:20 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:15:20 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:15:20 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:15:20 [notice] 1#1: start worker processes
+2016/12/19 13:15:20 [notice] 1#1: start worker process 6
+2016/12/19 13:18:14 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:18:14 [notice] 6#6: exiting
+2016/12/19 13:18:14 [notice] 6#6: exit
+2016/12/19 13:18:14 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:18:14 [notice] 1#1: worker process 6 exited with code 0
+2016/12/19 13:18:14 [notice] 1#1: exit
+2016/12/19 13:18:15 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:18:15 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:18:15 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:18:15 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:18:15 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:18:15 [notice] 1#1: start worker processes
+2016/12/19 13:18:15 [notice] 1#1: start worker process 6
+2016/12/19 13:19:07 [error] 6#6: *1 lua entry thread aborted: runtime error: error loading module 'finance' from file '/data/finance.lua':
+	/data/finance.lua:176: '}' expected (to close '{' at line 174) near 'deal_no'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/data/lapi/testData.lua:7: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 13:20:56 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:20:56 [notice] 6#6: exiting
+2016/12/19 13:20:56 [notice] 6#6: exit
+2016/12/19 13:20:56 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:20:56 [notice] 1#1: worker process 6 exited with code 0
+2016/12/19 13:20:56 [notice] 1#1: exit
+2016/12/19 13:20:57 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:20:57 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:20:57 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:20:57 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:20:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:20:57 [notice] 1#1: start worker processes
+2016/12/19 13:20:57 [notice] 1#1: start worker process 7
+2016/12/19 13:21:09 [error] 7#7: *1 lua entry thread aborted: runtime error: error loading module 'finance' from file '/data/finance.lua':
+	/data/finance.lua:189: '}' expected (to close '{' at line 174) near 'ip'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/data/lapi/testData.lua:7: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 13:21:58 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:21:58 [notice] 7#7: exiting
+2016/12/19 13:21:58 [notice] 7#7: exit
+2016/12/19 13:21:58 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:21:58 [notice] 1#1: worker process 7 exited with code 0
+2016/12/19 13:21:58 [notice] 1#1: exit
+2016/12/19 13:21:59 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:21:59 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:21:59 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:21:59 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:21:59 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:21:59 [notice] 1#1: start worker processes
+2016/12/19 13:21:59 [notice] 1#1: start worker process 6
+2016/12/19 13:22:04 [error] 6#6: *1 lua entry thread aborted: runtime error: error loading module 'finance' from file '/data/finance.lua':
+	/data/finance.lua:189: '}' expected (to close '{' at line 174) near 'ip'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/data/lapi/testData.lua:7: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 13:22:15 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:22:15 [notice] 6#6: exiting
+2016/12/19 13:22:15 [notice] 6#6: exit
+2016/12/19 13:22:15 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:22:15 [notice] 1#1: worker process 6 exited with code 0
+2016/12/19 13:22:15 [notice] 1#1: exit
+2016/12/19 13:22:16 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:22:16 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:22:16 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:22:16 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:22:16 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:22:16 [notice] 1#1: start worker processes
+2016/12/19 13:22:16 [notice] 1#1: start worker process 7
+2016/12/19 13:22:25 [error] 7#7: *1 lua entry thread aborted: runtime error: error loading module 'finance' from file '/data/finance.lua':
+	/data/finance.lua:189: '}' expected (to close '{' at line 174) near 'ip'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/data/lapi/testData.lua:7: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 13:22:52 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:22:52 [notice] 7#7: exiting
+2016/12/19 13:22:52 [notice] 7#7: exit
+2016/12/19 13:22:52 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:22:52 [notice] 1#1: worker process 7 exited with code 0
+2016/12/19 13:22:52 [notice] 1#1: exit
+2016/12/19 13:22:52 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:22:52 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:22:52 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:22:52 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:22:52 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:22:52 [notice] 1#1: start worker processes
+2016/12/19 13:22:52 [notice] 1#1: start worker process 6
+2016/12/19 13:22:59 [error] 6#6: *1 lua entry thread aborted: runtime error: error loading module 'finance' from file '/data/finance.lua':
+	/data/finance.lua:194: '}' expected (to close '{' at line 192) near 'deal_no'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/data/lapi/testData.lua:7: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 13:23:12 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:23:12 [notice] 6#6: exiting
+2016/12/19 13:23:12 [notice] 6#6: exit
+2016/12/19 13:23:12 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:23:12 [notice] 1#1: worker process 6 exited with code 0
+2016/12/19 13:23:12 [notice] 1#1: exit
+2016/12/19 13:23:13 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:23:13 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:23:13 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:23:13 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:23:13 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:23:13 [notice] 1#1: start worker processes
+2016/12/19 13:23:13 [notice] 1#1: start worker process 6
+2016/12/19 13:23:17 [error] 6#6: *1 lua entry thread aborted: runtime error: error loading module 'finance' from file '/data/finance.lua':
+	/data/finance.lua:201: unexpected symbol near ','
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/data/lapi/testData.lua:7: in function </data/lapi/testData.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 13:23:37 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:23:37 [notice] 6#6: exiting
+2016/12/19 13:23:37 [notice] 6#6: exit
+2016/12/19 13:23:37 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:23:37 [notice] 1#1: worker process 6 exited with code 0
+2016/12/19 13:23:37 [notice] 1#1: exit
+2016/12/19 13:23:38 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:23:38 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:23:38 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:23:38 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:23:38 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:23:38 [notice] 1#1: start worker processes
+2016/12/19 13:23:38 [notice] 1#1: start worker process 7
+2016/12/19 13:28:41 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:28:41 [notice] 7#7: exiting
+2016/12/19 13:28:41 [notice] 7#7: exit
+2016/12/19 13:28:41 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:28:41 [notice] 1#1: worker process 7 exited with code 0
+2016/12/19 13:28:41 [notice] 1#1: exit
+2016/12/19 13:28:42 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:28:42 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:28:42 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:28:42 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:28:42 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:28:42 [notice] 1#1: start worker processes
+2016/12/19 13:28:42 [notice] 1#1: start worker process 7
+2016/12/19 13:29:28 [error] 7#7: *1 lua entry thread aborted: runtime error: /data/lapi/exchange.lua:19: attempt to index global 'finance' (a nil value)
+stack traceback:
+coroutine 0:
+	/data/lapi/exchange.lua: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/exchange.lua:22: in function </data/lapi/exchange.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/exchange HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 13:32:12 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:32:12 [notice] 7#7: exiting
+2016/12/19 13:32:12 [notice] 7#7: exit
+2016/12/19 13:32:12 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:32:12 [notice] 1#1: worker process 7 exited with code 0
+2016/12/19 13:32:12 [notice] 1#1: exit
+2016/12/19 13:32:13 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:32:13 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:32:13 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:32:13 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:32:13 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:32:13 [notice] 1#1: start worker processes
+2016/12/19 13:32:13 [notice] 1#1: start worker process 6
+2016/12/19 13:34:53 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:34:53 [notice] 6#6: exiting
+2016/12/19 13:34:53 [notice] 6#6: exit
+2016/12/19 13:34:53 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:34:53 [notice] 1#1: worker process 6 exited with code 0
+2016/12/19 13:34:53 [notice] 1#1: exit
+2016/12/19 13:34:54 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:34:54 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:34:54 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:34:54 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:34:54 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:34:54 [notice] 1#1: start worker processes
+2016/12/19 13:34:54 [notice] 1#1: start worker process 7
+2016/12/19 13:35:02 [debug] 7#7: *1 [lua] finance.lua:113: handle(): sql_str1:select coinid,coi_num from fin_user_coins where user_id = 'humin';
+2016/12/19 13:35:34 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:35:34 [notice] 7#7: exiting
+2016/12/19 13:35:34 [notice] 7#7: exit
+2016/12/19 13:35:34 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:35:34 [notice] 1#1: worker process 7 exited with code 0
+2016/12/19 13:35:34 [notice] 1#1: exit
+2016/12/19 13:35:34 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:35:34 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:35:34 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:35:34 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:35:34 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:35:34 [notice] 1#1: start worker processes
+2016/12/19 13:35:34 [notice] 1#1: start worker process 7
+2016/12/19 13:35:41 [debug] 7#7: *1 [lua] finance.lua:113: handle(): sql_str1:select coin_id,coin_num from fin_user_coins where user_id = 'humin';
+2016/12/19 13:35:41 [debug] 7#7: *1 [lua] finance.lua:121: handle(): sql_str1:select exchange_rate,coin_id,is_open from fin_exrate_config where appid = 1 ;
+2016/12/19 13:36:46 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:36:46 [notice] 7#7: exiting
+2016/12/19 13:36:46 [notice] 7#7: exit
+2016/12/19 13:36:46 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:36:46 [notice] 1#1: worker process 7 exited with code 0
+2016/12/19 13:36:46 [notice] 1#1: exit
+2016/12/19 13:36:47 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:36:47 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:36:47 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:36:47 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:36:47 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:36:47 [notice] 1#1: start worker processes
+2016/12/19 13:36:47 [notice] 1#1: start worker process 6
+2016/12/19 13:36:54 [debug] 6#6: *1 [lua] finance.lua:113: handle(): sql_str1:select coin_id,coin_num from fin_user_coins where user_id = 'humin';
+2016/12/19 13:36:54 [debug] 6#6: *1 [lua] finance.lua:121: handle(): sql_str1:select * from fin_exrate_config where appid = 1 ;
+2016/12/19 13:37:27 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:37:27 [notice] 6#6: exiting
+2016/12/19 13:37:27 [notice] 6#6: exit
+2016/12/19 13:37:27 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:37:27 [notice] 1#1: worker process 6 exited with code 0
+2016/12/19 13:37:27 [notice] 1#1: exit
+2016/12/19 13:37:28 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:37:28 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:37:28 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:37:28 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:37:28 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:37:28 [notice] 1#1: start worker processes
+2016/12/19 13:37:28 [notice] 1#1: start worker process 6
+2016/12/19 13:37:32 [debug] 6#6: *1 [lua] finance.lua:113: handle(): sql_str1:select coin_id,coin_num from fin_user_coins where user_id = 'humin';
+2016/12/19 13:37:32 [debug] 6#6: *1 [lua] finance.lua:121: handle(): sql_str1:select * from fin_exrate_config where app_id = 1 ;
+2016/12/19 13:38:03 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:38:03 [notice] 6#6: exiting
+2016/12/19 13:38:03 [notice] 6#6: exit
+2016/12/19 13:38:03 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:38:03 [notice] 1#1: worker process 6 exited with code 0
+2016/12/19 13:38:03 [notice] 1#1: exit
+2016/12/19 13:38:04 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:38:04 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:38:04 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:38:04 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:38:04 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:38:04 [notice] 1#1: start worker processes
+2016/12/19 13:38:04 [notice] 1#1: start worker process 6
+2016/12/19 13:38:11 [debug] 6#6: *1 [lua] finance.lua:113: handle(): sql_str1:select coin_id,coin_num from fin_user_coins where user_id = 'humin';
+2016/12/19 13:38:11 [debug] 6#6: *1 [lua] finance.lua:121: handle(): sql_str1:select * from fin_exrate_config where app_id = '1' ;
+2016/12/19 13:38:11 [error] 6#6: *1 lua entry thread aborted: runtime error: /data/finance.lua:171: attempt to compare number with nil
+stack traceback:
+coroutine 0:
+	/data/finance.lua: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/exchange.lua:23: in function </data/lapi/exchange.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/exchange HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 13:38:30 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:38:30 [notice] 6#6: exiting
+2016/12/19 13:38:30 [notice] 6#6: exit
+2016/12/19 13:38:30 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:38:30 [notice] 1#1: worker process 6 exited with code 0
+2016/12/19 13:38:30 [notice] 1#1: exit
+2016/12/19 13:38:30 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:38:30 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:38:30 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:38:30 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:38:30 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:38:30 [notice] 1#1: start worker processes
+2016/12/19 13:38:30 [notice] 1#1: start worker process 6
+2016/12/19 13:38:36 [debug] 6#6: *1 [lua] finance.lua:113: handle(): sql_str1:select coin_id,coin_num from fin_user_coins where user_id = 'humin';
+2016/12/19 13:38:36 [debug] 6#6: *1 [lua] finance.lua:121: handle(): sql_str1:select * from fin_exrate_config where app_id = '1' ;
+2016/12/19 13:38:36 [error] 6#6: *1 lua entry thread aborted: runtime error: /data/finance.lua:216: bad argument #4 to 'format' (number expected, got string)
+stack traceback:
+coroutine 0:
+	[C]: in function 'format'
+	/data/finance.lua:216: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/exchange.lua:23: in function </data/lapi/exchange.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/exchange HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 13:39:57 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:39:57 [notice] 6#6: exiting
+2016/12/19 13:39:57 [notice] 6#6: exit
+2016/12/19 13:39:57 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:39:57 [notice] 1#1: worker process 6 exited with code 0
+2016/12/19 13:39:57 [notice] 1#1: exit
+2016/12/19 13:39:58 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:39:58 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:39:58 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:39:58 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:39:58 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:39:58 [notice] 1#1: start worker processes
+2016/12/19 13:39:58 [notice] 1#1: start worker process 7
+2016/12/19 13:40:03 [debug] 7#7: *1 [lua] finance.lua:113: handle(): sql_str1:select coin_id,coin_num from fin_user_coins where user_id = 'humin';
+2016/12/19 13:40:03 [debug] 7#7: *1 [lua] finance.lua:121: handle(): sql_str1:select * from fin_exrate_config where app_id = '1' ;
+2016/12/19 13:40:03 [error] 7#7: *1 lua entry thread aborted: runtime error: /data/finance.lua:216: bad argument #11 to 'format' (no value)
+stack traceback:
+coroutine 0:
+	[C]: in function 'format'
+	/data/finance.lua:216: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/exchange.lua:23: in function </data/lapi/exchange.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/exchange HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 13:41:15 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:41:15 [notice] 7#7: exiting
+2016/12/19 13:41:15 [notice] 7#7: exit
+2016/12/19 13:41:15 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:41:15 [notice] 1#1: worker process 7 exited with code 0
+2016/12/19 13:41:15 [notice] 1#1: exit
+2016/12/19 13:41:16 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:41:16 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:41:16 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:41:16 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:41:16 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:41:16 [notice] 1#1: start worker processes
+2016/12/19 13:41:16 [notice] 1#1: start worker process 7
+2016/12/19 13:41:20 [debug] 7#7: *1 [lua] finance.lua:113: handle(): sql_str1:select coin_id,coin_num from fin_user_coins where user_id = 'humin';
+2016/12/19 13:41:20 [debug] 7#7: *1 [lua] finance.lua:121: handle(): sql_str1:select * from fin_exrate_config where app_id = '1' ;
+2016/12/19 13:46:24 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:46:24 [notice] 7#7: exiting
+2016/12/19 13:46:24 [notice] 7#7: exit
+2016/12/19 13:46:24 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:46:24 [notice] 1#1: worker process 7 exited with code 0
+2016/12/19 13:46:24 [notice] 1#1: exit
+2016/12/19 13:46:25 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:46:25 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:46:25 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:46:25 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:46:25 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:46:25 [notice] 1#1: start worker processes
+2016/12/19 13:46:25 [notice] 1#1: start worker process 7
+2016/12/19 13:46:30 [error] 7#7: *1 lua entry thread aborted: runtime error: error loading module 'finance' from file '/data/finance.lua':
+	/data/finance.lua:224: unexpected symbol near ','
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/data/lapi/exchange.lua:5: in function </data/lapi/exchange.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/exchange HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 13:46:51 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:46:51 [notice] 7#7: exiting
+2016/12/19 13:46:51 [notice] 7#7: exit
+2016/12/19 13:46:51 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:46:51 [notice] 1#1: worker process 7 exited with code 0
+2016/12/19 13:46:51 [notice] 1#1: exit
+2016/12/19 13:46:51 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:46:51 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:46:51 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:46:51 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:46:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:46:51 [notice] 1#1: start worker processes
+2016/12/19 13:46:51 [notice] 1#1: start worker process 6
+2016/12/19 13:50:03 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:50:03 [notice] 6#6: exiting
+2016/12/19 13:50:03 [notice] 6#6: exit
+2016/12/19 13:50:03 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:50:03 [notice] 1#1: worker process 6 exited with code 0
+2016/12/19 13:50:03 [notice] 1#1: exit
+2016/12/19 13:50:04 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:50:04 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:50:04 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:50:04 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:50:04 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:50:04 [notice] 1#1: start worker processes
+2016/12/19 13:50:04 [notice] 1#1: start worker process 6
+2016/12/19 13:50:08 [debug] 6#6: *1 [lua] finance.lua:219: handle(): sql_str1:update fin_user_coins set coin_num = coin_num + 100 where user_id = humin and coin_id = 1;
+2016/12/19 13:50:08 [debug] 6#6: *1 [lua] finance.lua:219: handle(): sql_str1:update fin_user_coins set coin_num = coin_num + 100 where user_id = humin and coin_id = 1;
+2016/12/19 13:50:36 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 13:50:36 [notice] 6#6: exiting
+2016/12/19 13:50:36 [notice] 6#6: exit
+2016/12/19 13:50:36 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 13:50:36 [notice] 1#1: worker process 6 exited with code 0
+2016/12/19 13:50:36 [notice] 1#1: exit
+2016/12/19 13:50:37 [notice] 1#1: using the "epoll" event method
+2016/12/19 13:50:37 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 13:50:37 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 13:50:37 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 13:50:37 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 13:50:37 [notice] 1#1: start worker processes
+2016/12/19 13:50:37 [notice] 1#1: start worker process 6
+2016/12/19 13:50:45 [debug] 6#6: *1 [lua] finance.lua:219: handle(): sql_str1:update fin_user_coins set coin_num = coin_num + 100 where user_id = 'humin' and coin_id = 1;
+2016/12/19 13:50:45 [debug] 6#6: *1 [lua] finance.lua:219: handle(): sql_str1:update fin_user_coins set coin_num = coin_num + 100 where user_id = 'humin' and coin_id = 1;
+2016/12/19 13:53:13 [debug] 6#6: *3 [lua] finance.lua:219: handle(): sql_str1:update fin_user_coins set coin_num = coin_num + 200 where user_id = 'humin' and coin_id = 2;
+2016/12/19 13:53:13 [debug] 6#6: *3 [lua] finance.lua:219: handle(): sql_str1:update fin_user_coins set coin_num = coin_num + 0 where user_id = 'humin' and coin_id = 2;
+2016/12/19 14:50:09 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 14:50:09 [notice] 6#6: exiting
+2016/12/19 14:50:09 [notice] 6#6: exit
+2016/12/19 14:50:09 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 14:50:09 [notice] 1#1: worker process 6 exited with code 0
+2016/12/19 14:50:09 [notice] 1#1: exit
+2016/12/19 14:50:09 [notice] 1#1: using the "epoll" event method
+2016/12/19 14:50:09 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 14:50:09 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 14:50:09 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 14:50:09 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 14:50:09 [notice] 1#1: start worker processes
+2016/12/19 14:50:09 [notice] 1#1: start worker process 7
+2016/12/19 14:52:04 [debug] 7#7: *1 [lua] finance.lua:115: handle(): sql_str1:			select  users.coin_num,users.coin_id,conf.exchange_rate, 
+			from fin_user_coins users ,fin_exrate_config conf 
+			where users.coin_id=conf.coin_id and users.user_id = 'humin' and conf.appid = '2' ;
+		
+2016/12/19 14:55:02 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 14:55:02 [notice] 7#7: exiting
+2016/12/19 14:55:02 [notice] 7#7: exit
+2016/12/19 14:55:02 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 14:55:02 [notice] 1#1: worker process 7 exited with code 0
+2016/12/19 14:55:02 [notice] 1#1: exit
+2016/12/19 14:55:03 [notice] 1#1: using the "epoll" event method
+2016/12/19 14:55:03 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 14:55:03 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 14:55:03 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 14:55:03 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 14:55:03 [notice] 1#1: start worker processes
+2016/12/19 14:55:03 [notice] 1#1: start worker process 7
+2016/12/19 14:55:12 [debug] 7#7: *1 [lua] finance.lua:115: handle(): sql_str1:			select  users.coin_num,users.coin_id,conf.exchange_rate  
+			from fin_user_coins users ,fin_exrate_config conf 
+			where users.coin_id=conf.coin_id and users.user_id = 'humin' and conf.appid = '2' ;
+		
+2016/12/19 14:56:07 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 14:56:07 [notice] 7#7: exiting
+2016/12/19 14:56:07 [notice] 7#7: exit
+2016/12/19 14:56:07 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 14:56:07 [notice] 1#1: worker process 7 exited with code 0
+2016/12/19 14:56:07 [notice] 1#1: exit
+2016/12/19 14:56:08 [notice] 1#1: using the "epoll" event method
+2016/12/19 14:56:08 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 14:56:08 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 14:56:08 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 14:56:08 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 14:56:08 [notice] 1#1: start worker processes
+2016/12/19 14:56:08 [notice] 1#1: start worker process 7
+2016/12/19 14:56:13 [debug] 7#7: *1 [lua] finance.lua:115: handle(): sql_str1:			select  users.coin_num,users.coin_id,conf.exchange_rate  
+			from fin_user_coins users ,fin_exrate_config conf 
+			where users.coin_id=conf.coin_id and users.user_id = 'humin' and conf.app_id = '2' ;
+		
+2016/12/19 14:56:46 [debug] 7#7: *1 [lua] finance.lua:115: handle(): sql_str1:			select  users.coin_num,users.coin_id,conf.exchange_rate  
+			from fin_user_coins users ,fin_exrate_config conf 
+			where users.coin_id=conf.coin_id and users.user_id = 'humin' and conf.app_id = '2' ;
+		
+2016/12/19 14:57:46 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 14:57:46 [notice] 7#7: exiting
+2016/12/19 14:57:46 [notice] 7#7: exit
+2016/12/19 14:57:46 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 14:57:46 [notice] 1#1: worker process 7 exited with code 0
+2016/12/19 14:57:46 [notice] 1#1: exit
+2016/12/19 14:57:47 [notice] 1#1: using the "epoll" event method
+2016/12/19 14:57:47 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 14:57:47 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 14:57:47 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 14:57:47 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 14:57:47 [notice] 1#1: start worker processes
+2016/12/19 14:57:47 [notice] 1#1: start worker process 6
+2016/12/19 14:57:53 [debug] 6#6: *1 [lua] finance.lua:152: handle(): sql_str2:				update fin_user_coins set coin_num = coin_num - 20 where user_id = 'humin' and coin_id = 2;
+				insert into fin_user_coins_deallog(deal_type,coin_id,description,ip,operate_time,droi_coins_before,order_no,droi_coins_after,source,deal_seq,user_id,deal_no,exchange_rate,operator_id) values(3,2,'消费','127.0.0.1',now(),200,'aa',180,0,'111','humin','aa',100,'2'); 
+			
+2016/12/19 14:58:25 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 14:58:25 [notice] 6#6: exiting
+2016/12/19 14:58:25 [notice] 6#6: exit
+2016/12/19 14:58:25 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 14:58:25 [notice] 1#1: worker process 6 exited with code 0
+2016/12/19 14:58:25 [notice] 1#1: exit
+2016/12/19 14:58:25 [notice] 1#1: using the "epoll" event method
+2016/12/19 14:58:25 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 14:58:25 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 14:58:25 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 14:58:25 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 14:58:25 [notice] 1#1: start worker processes
+2016/12/19 14:58:25 [notice] 1#1: start worker process 7
+2016/12/19 14:58:30 [debug] 7#7: *1 [lua] finance.lua:152: handle(): aaaaaaaaasql_str2:				update fin_user_coins set coin_num = coin_num - 20 where user_id = 'humin' and coin_id = 2;
+				insert into fin_user_coins_deallog(deal_type,coin_id,description,ip,operate_time,droi_coins_before,order_no,droi_coins_after,source,deal_seq,user_id,deal_no,exchange_rate,operator_id) values(3,2,'消费','127.0.0.1',now(),200,'aa',180,0,'111','humin','aa',100,'2'); 
+			
+2016/12/19 15:01:27 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 15:01:27 [notice] 7#7: exiting
+2016/12/19 15:01:27 [notice] 7#7: exit
+2016/12/19 15:01:27 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 15:01:27 [notice] 1#1: worker process 7 exited with code 0
+2016/12/19 15:01:27 [notice] 1#1: exit
+2016/12/19 15:01:28 [notice] 1#1: using the "epoll" event method
+2016/12/19 15:01:28 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 15:01:28 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 15:01:28 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 15:01:28 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 15:01:28 [notice] 1#1: start worker processes
+2016/12/19 15:01:28 [notice] 1#1: start worker process 7
+2016/12/19 15:01:54 [error] 7#7: *1 lua entry thread aborted: runtime error: /data/finance.lua:171: bad argument #2 to 'format' (number expected, got string)
+stack traceback:
+coroutine 0:
+	[C]: in function 'format'
+	/data/finance.lua:171: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/consume.lua:23: in function </data/lapi/consume.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/consumer HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/19 15:04:07 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 15:04:07 [notice] 7#7: exiting
+2016/12/19 15:04:07 [notice] 7#7: exit
+2016/12/19 15:04:07 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 15:04:07 [notice] 1#1: worker process 7 exited with code 0
+2016/12/19 15:04:07 [notice] 1#1: exit
+2016/12/19 15:04:07 [notice] 1#1: using the "epoll" event method
+2016/12/19 15:04:07 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 15:04:07 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 15:04:07 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 15:04:07 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 15:04:07 [notice] 1#1: start worker processes
+2016/12/19 15:04:07 [notice] 1#1: start worker process 6
+2016/12/19 15:04:13 [debug] 6#6: *1 [lua] finance.lua:181: handle(): bbbbbbbbbbsql_str2:				select users.coin_num,conf.coin_id,conf.exchange_rate, 100 * users.coin_num/conf.exchange_rate as val  
+				from fin_user_coins users,
+				(select coin_id,exchange_rate from fin_exrate_config where is_open=1 and coin_id <> humin ) conf 
+				where users.coin_id=conf.coin_id and user_id='2'
+				ORDER BY users.coin_num/conf.exchange_rate desc;
+			
+2016/12/19 15:05:53 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 15:05:53 [notice] 6#6: exiting
+2016/12/19 15:05:53 [notice] 6#6: exit
+2016/12/19 15:05:53 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 15:05:53 [notice] 1#1: worker process 6 exited with code 0
+2016/12/19 15:05:53 [notice] 1#1: exit
+2016/12/19 15:05:54 [notice] 1#1: using the "epoll" event method
+2016/12/19 15:05:54 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 15:05:54 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 15:05:54 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 15:05:54 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 15:05:54 [notice] 1#1: start worker processes
+2016/12/19 15:05:54 [notice] 1#1: start worker process 7
+2016/12/19 15:07:29 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 15:07:29 [notice] 7#7: exiting
+2016/12/19 15:07:29 [notice] 7#7: exit
+2016/12/19 15:07:29 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 15:07:29 [notice] 1#1: worker process 7 exited with code 0
+2016/12/19 15:07:29 [notice] 1#1: exit
+2016/12/19 15:07:29 [notice] 1#1: using the "epoll" event method
+2016/12/19 15:07:29 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 15:07:29 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 15:07:29 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 15:07:29 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 15:07:29 [notice] 1#1: start worker processes
+2016/12/19 15:07:29 [notice] 1#1: start worker process 7
+2016/12/19 15:08:27 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/19 15:08:27 [notice] 7#7: exiting
+2016/12/19 15:08:27 [notice] 7#7: exit
+2016/12/19 15:08:27 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/19 15:08:27 [notice] 1#1: worker process 7 exited with code 0
+2016/12/19 15:08:27 [notice] 1#1: exit
+2016/12/19 15:08:28 [notice] 1#1: using the "epoll" event method
+2016/12/19 15:08:28 [notice] 1#1: openresty/1.11.2.2
+2016/12/19 15:08:28 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/19 15:08:28 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/19 15:08:28 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/19 15:08:28 [notice] 1#1: start worker processes
+2016/12/19 15:08:28 [notice] 1#1: start worker process 6
+2016/12/20 02:55:44 [error] 6#6: *3 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected comma or object end but found T_END at character 90, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 02:55:44 [error] 6#6: *3 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {"tab":"ms_feedback_ratio_config",
+"data":{
+"level":1,
+"ratio":5,
+"modify_time":"NOW()"
+}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 02:56:45 [info] 6#6: *4 client timed out (110: Operation timed out) while waiting for request, client: 192.168.3.82, server: 0.0.0.0:80
+2016/12/20 02:57:44 [error] 6#6: *5 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected comma or object end but found T_END at character 90, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 02:57:44 [error] 6#6: *5 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {"tab":"ms_feedback_ratio_config",
+"data":{
+"level":1,
+"ratio":5,
+"modify_time":"NOW()"
+}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 06:46:16 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 06:46:16 [notice] 6#6: exiting
+2016/12/20 06:46:16 [notice] 6#6: exit
+2016/12/20 06:46:16 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 06:46:16 [notice] 1#1: worker process 6 exited with code 0
+2016/12/20 06:46:16 [notice] 1#1: exit
+2016/12/20 06:46:17 [notice] 1#1: using the "epoll" event method
+2016/12/20 06:46:17 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 06:46:17 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 06:46:17 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 06:46:17 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 06:46:17 [notice] 1#1: start worker processes
+2016/12/20 06:46:17 [notice] 1#1: start worker process 6
+2016/12/20 06:49:00 [error] 6#6: *1 lua entry thread aborted: runtime error: error loading module 'finance' from file '/data/finance.lua':
+	/data/finance.lua:136: unexpected symbol near ')'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/data/lapi/recharge.lua:5: in function </data/lapi/recharge.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 06:49:22 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 06:49:22 [notice] 6#6: exiting
+2016/12/20 06:49:22 [notice] 6#6: exit
+2016/12/20 06:49:22 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 06:49:22 [notice] 1#1: worker process 6 exited with code 0
+2016/12/20 06:49:22 [notice] 1#1: exit
+2016/12/20 06:49:23 [notice] 1#1: using the "epoll" event method
+2016/12/20 06:49:23 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 06:49:23 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 06:49:23 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 06:49:23 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 06:49:23 [notice] 1#1: start worker processes
+2016/12/20 06:49:23 [notice] 1#1: start worker process 6
+2016/12/20 06:49:34 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected comma or object end but found T_STRING at character 139, client: 192.168.3.82, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 06:49:34 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {
+"appid":"1",   "sign":"sign","role":1,"userid":"humin","random":"as","auth":"aaa","dealtype":0,"dealdesc":"rmb","source":0,"feedback":1
+"fee":200
+
+}, client: 192.168.3.82, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 06:50:33 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected comma or object end but found T_STRING at character 145, client: 192.168.3.82, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 06:50:33 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {
+"appid":"1",
+"sign":"sign",
+"role":1,
+"userid":"humin",
+"random":"as",
+"auth":"aaa",
+"dealtype":0,
+"dealdesc":"rmb",
+"source":0,
+"feedback":1
+"fee":200
+}
+}, client: 192.168.3.82, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 06:50:45 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected comma or object end but found T_STRING at character 145, client: 192.168.3.82, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 06:50:45 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {
+"appid":"1",
+"sign":"sign",
+"role":1,
+"userid":"humin",
+"random":"as",
+"auth":"aaa",
+"dealtype":0,
+"dealdesc":"rmb",
+"source":0,
+"feedback":1
+"fee":200
+}, client: 192.168.3.82, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 06:51:42 [error] 6#6: *1 lua entry thread aborted: runtime error: /data/finance.lua:39: attempt to index local 'pgsql' (a nil value)
+stack traceback:
+coroutine 0:
+	/data/finance.lua: in function 'getNewId'
+	/data/finance.lua:144: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/recharge.lua:25: in function </data/lapi/recharge.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 06:52:11 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 06:52:11 [notice] 6#6: exiting
+2016/12/20 06:52:11 [notice] 6#6: exit
+2016/12/20 06:52:11 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 06:52:11 [notice] 1#1: worker process 6 exited with code 0
+2016/12/20 06:52:11 [notice] 1#1: exit
+2016/12/20 06:52:12 [notice] 1#1: using the "epoll" event method
+2016/12/20 06:52:12 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 06:52:12 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 06:52:12 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 06:52:12 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 06:52:12 [notice] 1#1: start worker processes
+2016/12/20 06:52:12 [notice] 1#1: start worker process 7
+2016/12/20 06:53:50 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 06:53:50 [notice] 7#7: exiting
+2016/12/20 06:53:50 [notice] 7#7: exit
+2016/12/20 06:53:50 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 06:53:50 [notice] 1#1: worker process 7 exited with code 0
+2016/12/20 06:53:50 [notice] 1#1: exit
+2016/12/20 06:53:51 [notice] 1#1: using the "epoll" event method
+2016/12/20 06:53:51 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 06:53:51 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 06:53:51 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 06:53:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 06:53:51 [notice] 1#1: start worker processes
+2016/12/20 06:53:51 [notice] 1#1: start worker process 7
+2016/12/20 06:54:06 [debug] 7#7: *1 [lua] finance.lua:143: handle(): {"hw":{"ratio":5,"fee":1000,"level":1}}
+2016/12/20 06:54:06 [debug] 7#7: *1 [lua] finance.lua:191: handle(): insert into fin_user_coins(user_id,operate_time,coin_num,coin_id) values('hw',now(),1000,1); insert into fin_user_coins_deallog(deal_type,coin_id,description,ip,operate_time,droi_coins_before,order_no,droi_coins_after,source,deal_seq,user_id,exchange_rate,operator_id) values(0,1,'rmb','',now(),0,'',1000,0,'','hw',5,'1'); 
+2016/12/20 06:54:06 [debug] 7#7: *1 [lua] finance.lua:191: handle(): update fin_user_coins set coin_num = coin_num + 200 WHERE user_id='humin' and coin_id = 1; insert into fin_user_coins_deallog(deal_type,coin_id,description,ip,operate_time,droi_coins_before,order_no,droi_coins_after,source,deal_seq,user_id,operator_id) values(0,1,'rmb','',now(),4580,'',4780,0,'','humin','1'); 
+2016/12/20 07:01:02 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 07:01:02 [notice] 7#7: exiting
+2016/12/20 07:01:02 [notice] 7#7: exit
+2016/12/20 07:01:02 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 07:01:02 [notice] 1#1: worker process 7 exited with code 0
+2016/12/20 07:01:02 [notice] 1#1: exit
+2016/12/20 07:01:02 [notice] 1#1: using the "epoll" event method
+2016/12/20 07:01:02 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 07:01:02 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 07:01:02 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 07:01:02 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 07:01:02 [notice] 1#1: start worker processes
+2016/12/20 07:01:02 [notice] 1#1: start worker process 7
+2016/12/20 07:01:21 [debug] 7#7: *1 [lua] finance.lua:143: handle(): {"hw":{"ratio":5,"fee":1000,"level":1}}
+2016/12/20 07:01:21 [debug] 7#7: *1 [lua] finance.lua:193: handle(): insert into fin_user_coins(user_id,operate_time,coin_num,coin_id) values('hw',now(),1000,1); insert into fin_user_coins_deallog(deal_type,coin_id,deal_coins_before,description,ip,operate_time,deal_coins_after,order_no,source,deal_seq,user_id,exchange_rate,operator_id) values(0,1,0,'rmb','',now(),1000,'',0,'22','hw',5,'1'); 
+2016/12/20 07:01:21 [debug] 7#7: *1 [lua] finance.lua:193: handle(): update fin_user_coins set coin_num = coin_num + 200 WHERE user_id='humin' and coin_id = 1; insert into fin_user_coins_deallog(deal_type,coin_id,deal_coins_before,description,ip,operate_time,deal_coins_after,order_no,source,deal_seq,user_id,operator_id) values(0,1,4580,'rmb','',now(),4780,'',0,'22','humin','1'); 
+2016/12/20 07:03:36 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 07:03:36 [notice] 7#7: exiting
+2016/12/20 07:03:36 [notice] 7#7: exit
+2016/12/20 07:03:36 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 07:03:36 [notice] 1#1: worker process 7 exited with code 0
+2016/12/20 07:03:36 [notice] 1#1: exit
+2016/12/20 07:03:37 [notice] 1#1: using the "epoll" event method
+2016/12/20 07:03:37 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 07:03:37 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 07:03:37 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 07:03:37 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 07:03:37 [notice] 1#1: start worker processes
+2016/12/20 07:03:37 [notice] 1#1: start worker process 7
+2016/12/20 07:03:44 [debug] 7#7: *1 [lua] finance.lua:145: handle(): {"hw":{"ratio":5,"fee":1000,"level":1}}
+2016/12/20 07:03:44 [debug] 7#7: *1 [lua] finance.lua:195: handle(): update fin_user_coins set coin_num = coin_num + 1000 WHERE user_id='hw' and coin_id = 1; insert into fin_user_coins_deallog(description,ip,deal_type,coin_id,deal_coins_before,operate_time,order_no,droi_coins_before,deal_coins_after,droi_coins_after,source,deal_seq,user_id,exchange_rate,operator_id) values('rmb','',0,1,1000,now(),'',1000,2000,2000,0,'22','hw',5,'1'); 
+2016/12/20 07:03:44 [debug] 7#7: *1 [lua] finance.lua:195: handle(): update fin_user_coins set coin_num = coin_num + 200 WHERE user_id='humin' and coin_id = 1; insert into fin_user_coins_deallog(description,ip,deal_type,coin_id,deal_coins_before,operate_time,order_no,droi_coins_before,deal_coins_after,droi_coins_after,source,deal_seq,user_id,operator_id) values('rmb','',0,1,4580,now(),'',4580,4780,4780,0,'22','humin','1'); 
+2016/12/20 07:07:43 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 07:07:43 [notice] 7#7: exiting
+2016/12/20 07:07:43 [notice] 7#7: exit
+2016/12/20 07:07:43 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 07:07:43 [notice] 1#1: worker process 7 exited with code 0
+2016/12/20 07:07:43 [notice] 1#1: exit
+2016/12/20 07:07:43 [notice] 1#1: using the "epoll" event method
+2016/12/20 07:07:43 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 07:07:43 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 07:07:43 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 07:07:43 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 07:07:43 [notice] 1#1: start worker processes
+2016/12/20 07:07:43 [notice] 1#1: start worker process 7
+2016/12/20 07:08:07 [debug] 7#7: *1 [lua] finance.lua:145: handle(): {"hw":{"ratio":5,"fee":1000,"level":1}}
+2016/12/20 07:08:07 [debug] 7#7: *1 [lua] finance.lua:196: handle(): update fin_user_coins set coin_num = coin_num + 1000 WHERE user_id='hw' and coin_id = 1; insert into fin_user_coins_deallog(description,ip,deal_type,coin_id,deal_coins_before,operate_time,order_no,droi_coins_before,deal_coins_after,droi_coins_after,source,deal_seq,user_id,exchange_rate,operator_id) values('rmb','',0,1,2000,now(),'',2000,3000,3000,0,'22','hw',5,'1'); 
+2016/12/20 07:08:07 [debug] 7#7: *1 [lua] finance.lua:196: handle(): update fin_user_coins set coin_num = coin_num + 200 WHERE user_id='humin' and coin_id = 1; insert into fin_user_coins_deallog(description,ip,deal_type,coin_id,deal_coins_before,operate_time,order_no,droi_coins_before,deal_coins_after,droi_coins_after,source,deal_seq,user_id,operator_id) values('rmb','',0,1,4780,now(),'',4780,4980,4980,0,'22','humin','1'); 
+2016/12/20 07:09:45 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 07:09:45 [notice] 7#7: exiting
+2016/12/20 07:09:45 [notice] 7#7: exit
+2016/12/20 07:09:45 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 07:09:45 [notice] 1#1: worker process 7 exited with code 0
+2016/12/20 07:09:45 [notice] 1#1: exit
+2016/12/20 07:09:45 [notice] 1#1: using the "epoll" event method
+2016/12/20 07:09:45 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 07:09:45 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 07:09:45 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 07:09:45 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 07:09:45 [notice] 1#1: start worker processes
+2016/12/20 07:09:45 [notice] 1#1: start worker process 6
+2016/12/20 07:09:54 [debug] 6#6: *1 [lua] finance.lua:145: handle(): {"hw":{"ratio":5,"fee":1000,"level":1}}
+2016/12/20 07:09:54 [debug] 6#6: *1 [lua] finance.lua:195: handle(): update fin_user_coins set coin_num = coin_num + 1000 WHERE user_id='hw' and coin_id = 1; insert into fin_user_coins_deallog(description,ip,deal_type,coin_id,deal_coins_before,operate_time,order_no,droi_coins_before,deal_coins_after,droi_coins_after,source,deal_seq,user_id,exchange_rate,operator_id) values('rmb','',0,1,3000,now(),'',3000,4000,4000,0,'22','hw',5,'1'); 
+2016/12/20 07:09:54 [debug] 6#6: *1 [lua] finance.lua:195: handle(): update fin_user_coins set coin_num = coin_num + 200 WHERE user_id='humin' and coin_id = 1; insert into fin_user_coins_deallog(description,ip,deal_type,coin_id,deal_coins_before,operate_time,order_no,droi_coins_before,deal_coins_after,droi_coins_after,source,deal_seq,user_id,exchange_rate,operator_id) values('rmb','',0,1,4780,now(),'',4780,4980,4980,0,'22','humin',10,'1'); 
+2016/12/20 07:10:08 [debug] 6#6: *1 [lua] finance.lua:145: handle(): {"hw":{"ratio":5,"fee":1000,"level":1}}
+2016/12/20 07:10:08 [debug] 6#6: *1 [lua] finance.lua:195: handle(): update fin_user_coins set coin_num = coin_num + 1000 WHERE user_id='hw' and coin_id = 1; insert into fin_user_coins_deallog(description,ip,deal_type,coin_id,deal_coins_before,operate_time,order_no,droi_coins_before,deal_coins_after,droi_coins_after,source,deal_seq,user_id,exchange_rate,operator_id) values('rmb','',0,1,4000,now(),'',4000,5000,5000,0,'22','hw',5,'1'); 
+2016/12/20 07:10:08 [debug] 6#6: *1 [lua] finance.lua:195: handle(): update fin_user_coins set coin_num = coin_num + 200 WHERE user_id='humin' and coin_id = 1; insert into fin_user_coins_deallog(description,ip,deal_type,coin_id,deal_coins_before,operate_time,order_no,droi_coins_before,deal_coins_after,droi_coins_after,source,deal_seq,user_id,exchange_rate,operator_id) values('rmb','',0,1,4980,now(),'',4980,5180,5180,0,'22','humin',10,'1'); 
+2016/12/20 07:38:54 [error] 6#6: *3 [lua] log.lua:22: log(): [MESSAGE]: response body json encode error: {"msg":"OK","code":0,"count":0}, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 07:40:14 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 07:40:14 [notice] 6#6: exiting
+2016/12/20 07:40:14 [notice] 6#6: exit
+2016/12/20 07:40:14 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 07:40:14 [notice] 1#1: worker process 6 exited with code 0
+2016/12/20 07:40:14 [notice] 1#1: exit
+2016/12/20 07:40:14 [notice] 1#1: using the "epoll" event method
+2016/12/20 07:40:14 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 07:40:14 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 07:40:14 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 07:40:14 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 07:40:14 [notice] 1#1: start worker processes
+2016/12/20 07:40:14 [notice] 1#1: start worker process 6
+2016/12/20 07:40:23 [debug] 6#6: *1 [lua] finance.lua:587: handle(): select * from fin_user_coins_deallog where user_id='humin'andoperator_id='1' order by id DES limit 20 offset 0 ;
+2016/12/20 07:40:23 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: response body json encode error: {"msg":"OK","code":0,"count":0}, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 07:42:13 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 07:42:13 [notice] 6#6: exiting
+2016/12/20 07:42:13 [notice] 6#6: exit
+2016/12/20 07:42:13 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 07:42:13 [notice] 1#1: worker process 6 exited with code 0
+2016/12/20 07:42:13 [notice] 1#1: exit
+2016/12/20 07:42:14 [notice] 1#1: using the "epoll" event method
+2016/12/20 07:42:14 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 07:42:14 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 07:42:14 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 07:42:14 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 07:42:14 [notice] 1#1: start worker processes
+2016/12/20 07:42:14 [notice] 1#1: start worker process 6
+2016/12/20 07:42:19 [debug] 6#6: *1 [lua] finance.lua:573: handle(): user_id='humin' andoperator_id='1' 
+2016/12/20 07:42:19 [debug] 6#6: *1 [lua] finance.lua:588: handle(): select * from fin_user_coins_deallog where user_id='humin' andoperator_id='1'  order by id DES limit 20 offset 0 ;
+2016/12/20 07:42:19 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: response body json encode error: {"msg":"OK","code":0,"count":0}, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 07:42:39 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 07:42:39 [notice] 6#6: exiting
+2016/12/20 07:42:39 [notice] 6#6: exit
+2016/12/20 07:42:39 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 07:42:39 [notice] 1#1: worker process 6 exited with code 0
+2016/12/20 07:42:39 [notice] 1#1: exit
+2016/12/20 07:42:40 [notice] 1#1: using the "epoll" event method
+2016/12/20 07:42:40 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 07:42:40 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 07:42:40 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 07:42:40 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 07:42:40 [notice] 1#1: start worker processes
+2016/12/20 07:42:40 [notice] 1#1: start worker process 6
+2016/12/20 07:42:46 [debug] 6#6: *1 [lua] finance.lua:573: handle():  user_id='humin' and operator_id='1' 
+2016/12/20 07:42:46 [debug] 6#6: *1 [lua] finance.lua:588: handle(): select * from fin_user_coins_deallog where  user_id='humin' and operator_id='1'  order by id DES limit 20 offset 0 ;
+2016/12/20 07:42:46 [error] 6#6: *1 [lua] log.lua:22: log(): [MESSAGE]: response body json encode error: {"msg":"OK","code":0,"count":0}, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 07:44:22 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 07:44:22 [notice] 6#6: exiting
+2016/12/20 07:44:22 [notice] 6#6: exit
+2016/12/20 07:44:22 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 07:44:22 [notice] 1#1: worker process 6 exited with code 0
+2016/12/20 07:44:22 [notice] 1#1: exit
+2016/12/20 07:44:22 [notice] 1#1: using the "epoll" event method
+2016/12/20 07:44:22 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 07:44:22 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 07:44:22 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 07:44:22 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 07:44:22 [notice] 1#1: start worker processes
+2016/12/20 07:44:22 [notice] 1#1: start worker process 7
+2016/12/20 07:44:30 [debug] 7#7: *1 [lua] finance.lua:573: handle():  user_id='humin' and operator_id='1' 
+2016/12/20 07:44:30 [debug] 7#7: *1 [lua] finance.lua:588: handle(): select * from fin_user_coins_deallog where  user_id='humin' and operator_id='1'  order by id DESC limit 20 offset 0 ;
+2016/12/20 07:44:30 [error] 7#7: *1 [lua] log.lua:22: log(): [MESSAGE]: response body json encode error: {"data":[{"description":"rmb","ip":"","deal_type":0,"coin_id":1,"deal_coins_before":4980,"operate_time":"2016-12-20 07:10:08.993531","id":38,"droi_coins_before":4980,"deal_coins_after":5180,"user_id":"humin","source":0,"deal_seq":22,"order_no":"","droi_coins_after":5180,"exchange_rate":10,"operator_id":"1"},{"description":"rmb","ip":"","deal_type":0,"coin_id":1,"deal_coins_before":4780,"operate_time":"2016-12-20 07:09:54.999248","id":36,"droi_coins_before":4780,"deal_coins_after":4980,"user_id":"humin","source":0,"deal_seq":22,"order_no":"","droi_coins_after":4980,"exchange_rate":10,"operator_id":"1"},{"deal_type":4,"coin_id":3,"deal_coins_before":5000,"droi_coins_before":1000,"deal_coins_after":5100,"ip":"127.0.0.1","deal_seq":111,"user_id":"humin","operate_time":"2016-12-19 13:50:45.510753","description":"兑换","id":12,"source":0,"deal_no":"aa","order_no":"aa","droi_coins_after":0,"exchange_rate":10,"operator_id":"1"},{"deal_type":4,"coin_id":1,"deal_coins_before":1000,"droi_coins_before":5000,"deal_coins_after":0,"ip":"127.0.0.1","deal_seq":111,"user_id":"humin","operate_time":"2016-12-19 13:50:45.510389","description":"兑换","id":11,"source":0,"deal_no":"aa","order_no":"aa","droi_coins_after":5100,"exchange_rate":0.1,"operator_id":"1"},{"deal_type":4,"coin_id":2,"deal_coins_before":5000,"droi_coins_before":1000,"deal_coins_after":5100,"ip":"127.0.0.1","deal_seq":111,"user_id":"humin","operate_time":"2016-12-19 13:50:45.509284","description":"兑换","id":10,"source":0,"deal_no":"aa","order_no":"aa","droi_coins_after":0,"exchange_rate":10,"operator_id":"1"},{"deal_type":4,"coin_id":1,"deal_coins_before":1000,"droi_coins_before":5000,"deal_coins_after":0,"ip":"127.0.0.1","deal_seq":111,"user_id":"humin","operate_time":"2016-12-19 13:50:45.508263","description":"兑换","id":9,"source":0,"deal_no":"aa","order_no":"aa","droi_coins_after":5100,"exchange_rate":0.1,"operator_id":"1"},{"deal_type":4,"coin_id":3,"deal_coins_before":5000,"droi_coins_before":1000,"deal_coins_after":5100,"ip":"127.0.0.1","deal_seq":111,"user_id":"humin","operate_time":"2016-12-19 13:50:08.505272","description":"兑换","id":8,"source":0,"deal_no":"aa","order_no":"aa","droi_coins_after":0,"exchange_rate":10,"operator_id":"1"},{"deal_type":4,"coin_id":1,"deal_coins_before":1000,"droi_coins_before":5000,"deal_coins_after":0,"ip":"127.0.0.1","deal_seq":111,"user_id":"humin","operate_time":"2016-12-19 13:50:08.504835","description":"兑换","id":7,"source":0,"deal_no":"aa","order_no":"aa","droi_coins_after":5100,"exchange_rate":0.1,"operator_id":"1"},{"deal_type":4,"coin_id":2,"deal_coins_before":5000,"droi_coins_before":1000,"deal_coins_after":5100,"ip":"127.0.0.1","deal_seq":111,"user_id":"humin","operate_time":"2016-12-19 13:50:08.503881","description":"兑换","id":6,"source":0,"deal_no":"aa","order_no":"aa","droi_coins_after":0,"exchange_rate":10,"operator_id":"1"},{"deal_type":4,"coin_id":1,"deal_coins_before":1000,"droi_coins_before":5000,"deal_coins_after":0,"ip":"127.0.0.1","deal_seq":111,"user_id":"humin","operate_time":"2016-12-19 13:50:08.500618","description":"兑换","id":5,"source":0,"deal_no":"aa","order_no":"aa","droi_coins_after":5100,"exchange_rate":0.1,"operator_id":"1"},{"deal_type":4,"coin_id":3,"deal_coins_before":5000,"droi_coins_before":1000,"deal_coins_after":5100,"ip":"127.0.0.1","deal_seq":111,"user_id":"humin","operate_time":"2016-12-19 13:46:56.404258","description":"兑换","id":4,"source":0,"deal_no":"aa","order_no":"aa","droi_coins_after":0,"exchange_rate":10,"operator_id":"1"},{"deal_type":4,"coin_id":1,"deal_coins_before":1000,"droi_coins_before":5000,"deal_coins_after":0,"ip":"127.0.0.1","deal_seq":111,"user_id":"humin","operate_time":"2016-12-19 13:46:56.403832","description":"兑换","id":3,"source":0,"deal_no":"aa","order_no":"aa","droi_coins_after":5100,"exchange_rate":0.1,"operator_id":"1"},{"deal_type":4,"coin_id":2,"deal_coins_before":5000,"droi_coins_before":1000,"deal_coins_after":5100,"ip":"127.0.
+2016/12/20 07:44:30 [error] 7#7: *1 lua entry thread aborted: runtime error: /data/common.lua:206: attempt to concatenate a table value
+stack traceback:
+coroutine 0:
+	/data/common.lua: in function 'gen_auth'
+	/data/common.lua:259: in function 'OUTPUT'
+	/data/common.lua:312: in function 'main'
+	/data/lapi/record.lua:28: in function </data/lapi/record.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 07:46:06 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 07:46:06 [notice] 7#7: exiting
+2016/12/20 07:46:06 [notice] 7#7: exit
+2016/12/20 07:46:06 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 07:46:06 [notice] 1#1: worker process 7 exited with code 0
+2016/12/20 07:46:06 [notice] 1#1: exit
+2016/12/20 07:46:06 [notice] 1#1: using the "epoll" event method
+2016/12/20 07:46:06 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 07:46:06 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 07:46:06 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 07:46:06 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 07:46:06 [notice] 1#1: start worker processes
+2016/12/20 07:46:06 [notice] 1#1: start worker process 8
+2016/12/20 07:46:09 [error] 8#8: *1 lua entry thread aborted: runtime error: /data/common.lua:206: attempt to concatenate a table value
+stack traceback:
+coroutine 0:
+	/data/common.lua: in function 'gen_auth'
+	/data/common.lua:259: in function 'OUTPUT'
+	/data/common.lua:312: in function 'main'
+	/data/lapi/record.lua:28: in function </data/lapi/record.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 08:09:08 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 08:09:08 [notice] 8#8: exiting
+2016/12/20 08:09:08 [notice] 8#8: exit
+2016/12/20 08:09:08 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 08:09:08 [notice] 1#1: worker process 8 exited with code 0
+2016/12/20 08:09:08 [notice] 1#1: exit
+2016/12/20 08:09:09 [notice] 1#1: using the "epoll" event method
+2016/12/20 08:09:09 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 08:09:09 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 08:09:09 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 08:09:09 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 08:09:09 [notice] 1#1: start worker processes
+2016/12/20 08:09:09 [notice] 1#1: start worker process 6
+2016/12/20 08:09:15 [error] 6#6: *1 lua entry thread aborted: runtime error: /data/common.lua:206: attempt to concatenate a table value
+stack traceback:
+coroutine 0:
+	/data/common.lua: in function 'gen_auth'
+	/data/common.lua:259: in function 'OUTPUT'
+	/data/common.lua:312: in function 'main'
+	/data/lapi/record.lua:28: in function </data/lapi/record.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 08:10:00 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 08:10:00 [notice] 6#6: exiting
+2016/12/20 08:10:00 [notice] 6#6: exit
+2016/12/20 08:10:00 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 08:10:00 [notice] 1#1: worker process 6 exited with code 0
+2016/12/20 08:10:00 [notice] 1#1: exit
+2016/12/20 08:10:01 [notice] 1#1: using the "epoll" event method
+2016/12/20 08:10:01 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 08:10:01 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 08:10:01 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 08:10:01 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 08:10:01 [notice] 1#1: start worker processes
+2016/12/20 08:10:01 [notice] 1#1: start worker process 6
+2016/12/20 08:11:09 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 08:11:09 [notice] 6#6: exiting
+2016/12/20 08:11:09 [notice] 6#6: exit
+2016/12/20 08:11:09 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 08:11:09 [notice] 1#1: worker process 6 exited with code 0
+2016/12/20 08:11:09 [notice] 1#1: exit
+2016/12/20 08:11:10 [notice] 1#1: using the "epoll" event method
+2016/12/20 08:11:10 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 08:11:10 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 08:11:10 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 08:11:10 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 08:11:10 [notice] 1#1: start worker processes
+2016/12/20 08:11:10 [notice] 1#1: start worker process 6
+2016/12/20 08:57:22 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 08:57:22 [notice] 6#6: exiting
+2016/12/20 08:57:22 [notice] 6#6: exit
+2016/12/20 08:57:22 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 08:57:22 [notice] 1#1: worker process 6 exited with code 0
+2016/12/20 08:57:22 [notice] 1#1: exit
+2016/12/20 08:57:23 [notice] 1#1: using the "epoll" event method
+2016/12/20 08:57:23 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 08:57:23 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 08:57:23 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 08:57:23 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 08:57:23 [notice] 1#1: start worker processes
+2016/12/20 08:57:23 [notice] 1#1: start worker process 6
+2016/12/20 08:58:56 [error] 6#6: *1 lua entry thread aborted: runtime error: /data/finance.lua:581: attempt to call global 's' (a nil value)
+stack traceback:
+coroutine 0:
+	/data/finance.lua: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/record.lua:28: in function </data/lapi/record.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/record HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 08:59:49 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 08:59:49 [notice] 6#6: exiting
+2016/12/20 08:59:49 [notice] 6#6: exit
+2016/12/20 08:59:49 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 08:59:49 [notice] 1#1: worker process 6 exited with code 0
+2016/12/20 08:59:49 [notice] 1#1: exit
+2016/12/20 08:59:50 [notice] 1#1: using the "epoll" event method
+2016/12/20 08:59:50 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 08:59:50 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 08:59:50 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 08:59:50 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 08:59:50 [notice] 1#1: start worker processes
+2016/12/20 08:59:50 [notice] 1#1: start worker process 8
+2016/12/20 09:10:04 [error] 8#8: *5 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 96, client: 192.168.3.82, server: , request: "POST /lapi/exchange HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 09:10:04 [error] 8#8: *5 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {
+"appid":"1",   "sign":"sign","role":1,"userid":"humin","random":"as","auth":"aaa",
+"fee":100,feetype:3
+
+}, client: 192.168.3.82, server: , request: "POST /lapi/exchange HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 09:12:56 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 09:12:56 [notice] 8#8: exiting
+2016/12/20 09:12:56 [notice] 8#8: exit
+2016/12/20 09:12:56 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 09:12:56 [notice] 1#1: worker process 8 exited with code 0
+2016/12/20 09:12:56 [notice] 1#1: exit
+2016/12/20 09:12:56 [notice] 1#1: using the "epoll" event method
+2016/12/20 09:12:56 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 09:12:56 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 09:12:56 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 09:12:56 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 09:12:56 [notice] 1#1: start worker processes
+2016/12/20 09:12:56 [notice] 1#1: start worker process 6
+2016/12/20 09:13:03 [debug] 6#6: *1 [lua] finance.lua:367: handle(): select coin_id,coin_num from fin_user_coins where user_id = 'humin'; and coin_id = 1
+2016/12/20 09:13:40 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 09:13:40 [notice] 6#6: exiting
+2016/12/20 09:13:40 [notice] 6#6: exit
+2016/12/20 09:13:40 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 09:13:40 [notice] 1#1: worker process 6 exited with code 0
+2016/12/20 09:13:40 [notice] 1#1: exit
+2016/12/20 09:13:41 [notice] 1#1: using the "epoll" event method
+2016/12/20 09:13:41 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 09:13:41 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 09:13:41 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 09:13:41 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 09:13:41 [notice] 1#1: start worker processes
+2016/12/20 09:13:41 [notice] 1#1: start worker process 6
+2016/12/20 09:13:49 [debug] 6#6: *1 [lua] finance.lua:368: handle(): select coin_id,coin_num from fin_user_coins where user_id = 'humin' and coin_id = 1;
+2016/12/20 09:13:49 [error] 6#6: *1 lua entry thread aborted: runtime error: /data/finance.lua:470: bad argument #11 to 'format' (no value)
+stack traceback:
+coroutine 0:
+	[C]: in function 'format'
+	/data/finance.lua:470: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/exchange.lua:23: in function </data/lapi/exchange.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/exchange HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 09:15:11 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 09:15:11 [notice] 6#6: exiting
+2016/12/20 09:15:11 [notice] 6#6: exit
+2016/12/20 09:15:11 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 09:15:11 [notice] 1#1: worker process 6 exited with code 0
+2016/12/20 09:15:11 [notice] 1#1: exit
+2016/12/20 09:15:11 [notice] 1#1: using the "epoll" event method
+2016/12/20 09:15:11 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 09:15:11 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 09:15:11 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 09:15:11 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 09:15:11 [notice] 1#1: start worker processes
+2016/12/20 09:15:11 [notice] 1#1: start worker process 7
+2016/12/20 09:15:16 [debug] 7#7: *1 [lua] finance.lua:368: handle(): select coin_id,coin_num from fin_user_coins where user_id = 'humin' and coin_id = 1;
+2016/12/20 09:15:16 [error] 7#7: *1 lua entry thread aborted: runtime error: /data/finance.lua:470: bad argument #11 to 'format' (no value)
+stack traceback:
+coroutine 0:
+	[C]: in function 'format'
+	/data/finance.lua:470: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/exchange.lua:23: in function </data/lapi/exchange.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/exchange HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 09:16:08 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 09:16:08 [notice] 7#7: exiting
+2016/12/20 09:16:08 [notice] 7#7: exit
+2016/12/20 09:16:08 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 09:16:08 [notice] 1#1: worker process 7 exited with code 0
+2016/12/20 09:16:08 [notice] 1#1: exit
+2016/12/20 09:16:09 [notice] 1#1: using the "epoll" event method
+2016/12/20 09:16:09 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 09:16:09 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 09:16:09 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 09:16:09 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 09:16:09 [notice] 1#1: start worker processes
+2016/12/20 09:16:09 [notice] 1#1: start worker process 8
+2016/12/20 09:16:13 [debug] 8#8: *1 [lua] finance.lua:368: handle(): select coin_id,coin_num from fin_user_coins where user_id = 'humin' and coin_id = 1;
+2016/12/20 09:16:13 [error] 8#8: *1 lua entry thread aborted: runtime error: /data/finance.lua:470: bad argument #11 to 'format' (no value)
+stack traceback:
+coroutine 0:
+	[C]: in function 'format'
+	/data/finance.lua:470: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/exchange.lua:23: in function </data/lapi/exchange.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/exchange HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 09:17:27 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 09:17:27 [notice] 8#8: exiting
+2016/12/20 09:17:27 [notice] 8#8: exit
+2016/12/20 09:17:27 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 09:17:27 [notice] 1#1: worker process 8 exited with code 0
+2016/12/20 09:17:27 [notice] 1#1: exit
+2016/12/20 09:17:28 [notice] 1#1: using the "epoll" event method
+2016/12/20 09:17:28 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 09:17:28 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 09:17:28 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 09:17:28 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 09:17:28 [notice] 1#1: start worker processes
+2016/12/20 09:17:28 [notice] 1#1: start worker process 7
+2016/12/20 09:17:31 [debug] 7#7: *1 [lua] finance.lua:368: handle(): select coin_id,coin_num from fin_user_coins where user_id = 'humin' and coin_id = 1;
+2016/12/20 09:17:31 [error] 7#7: *1 lua entry thread aborted: runtime error: /data/finance.lua:470: bad argument #11 to 'format' (no value)
+stack traceback:
+coroutine 0:
+	[C]: in function 'format'
+	/data/finance.lua:470: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/exchange.lua:23: in function </data/lapi/exchange.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/exchange HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 09:19:06 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 09:19:06 [notice] 7#7: exiting
+2016/12/20 09:19:06 [notice] 7#7: exit
+2016/12/20 09:19:06 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 09:19:06 [notice] 1#1: worker process 7 exited with code 0
+2016/12/20 09:19:06 [notice] 1#1: exit
+2016/12/20 09:19:06 [notice] 1#1: using the "epoll" event method
+2016/12/20 09:19:06 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 09:19:06 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 09:19:06 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 09:19:06 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 09:19:06 [notice] 1#1: start worker processes
+2016/12/20 09:19:06 [notice] 1#1: start worker process 6
+2016/12/20 09:19:11 [debug] 6#6: *1 [lua] finance.lua:368: handle(): select coin_id,coin_num from fin_user_coins where user_id = 'humin' and coin_id = 1;
+2016/12/20 09:19:11 [error] 6#6: *1 lua entry thread aborted: runtime error: /data/finance.lua:470: bad argument #11 to 'format' (no value)
+stack traceback:
+coroutine 0:
+	[C]: in function 'format'
+	/data/finance.lua:470: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/exchange.lua:23: in function </data/lapi/exchange.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/exchange HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 09:20:59 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 09:20:59 [notice] 6#6: exiting
+2016/12/20 09:20:59 [notice] 6#6: exit
+2016/12/20 09:20:59 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 09:20:59 [notice] 1#1: worker process 6 exited with code 0
+2016/12/20 09:20:59 [notice] 1#1: exit
+2016/12/20 09:21:00 [notice] 1#1: using the "epoll" event method
+2016/12/20 09:21:00 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 09:21:00 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 09:21:00 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 09:21:00 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 09:21:00 [notice] 1#1: start worker processes
+2016/12/20 09:21:00 [notice] 1#1: start worker process 7
+2016/12/20 09:21:06 [debug] 7#7: *1 [lua] finance.lua:368: handle(): select coin_id,coin_num from fin_user_coins where user_id = 'humin' and coin_id = 1;
+2016/12/20 09:21:06 [error] 7#7: *1 lua entry thread aborted: runtime error: /data/finance.lua:39: attempt to index local 'pgsql' (a nil value)
+stack traceback:
+coroutine 0:
+	/data/finance.lua: in function 'getNewId'
+	/data/finance.lua:429: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/exchange.lua:23: in function </data/lapi/exchange.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/exchange HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 09:21:17 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 09:21:17 [notice] 7#7: exiting
+2016/12/20 09:21:17 [notice] 7#7: exit
+2016/12/20 09:21:17 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 09:21:17 [notice] 1#1: worker process 7 exited with code 0
+2016/12/20 09:21:17 [notice] 1#1: exit
+2016/12/20 09:21:18 [notice] 1#1: using the "epoll" event method
+2016/12/20 09:21:18 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 09:21:18 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 09:21:18 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 09:21:18 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 09:21:18 [notice] 1#1: start worker processes
+2016/12/20 09:21:18 [notice] 1#1: start worker process 7
+2016/12/20 09:21:23 [debug] 7#7: *1 [lua] finance.lua:368: handle(): select coin_id,coin_num from fin_user_coins where user_id = 'humin' and coin_id = 1;
+2016/12/20 09:21:23 [error] 7#7: *1 lua entry thread aborted: runtime error: /data/finance.lua:474: bad argument #11 to 'format' (no value)
+stack traceback:
+coroutine 0:
+	[C]: in function 'format'
+	/data/finance.lua:474: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/exchange.lua:23: in function </data/lapi/exchange.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/exchange HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 09:28:37 [error] 7#7: *3 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 2, client: 192.168.4.152, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 09:28:37 [error] 7#7: *3 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {'appid':'nozumbzh7UYuBDHf3sQWIpPb0q8U9S5AlQAA8pEI','sign':'AJPYn8EBOFLur8m8Lusz7fckSPh1D28q4fVLMJ26','role':1,'userid':'53eb35a4c23099762200000f','feetype':1,'dealtype':1,'dealdesc':'微医','source':0,'feedback':1,'random':'9MZ9IQT9WBKH4KH085UABVCS0XWSWHK1','auth':'12219536089FE11FB4DC3E1ED603763C'}, client: 192.168.4.152, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 09:28:37 [info] 7#7: *3 client 192.168.4.152 closed keepalive connection (104: Connection reset by peer)
+2016/12/20 09:29:26 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 09:29:26 [notice] 7#7: exiting
+2016/12/20 09:29:26 [notice] 7#7: exit
+2016/12/20 09:29:26 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 09:29:26 [notice] 1#1: worker process 7 exited with code 0
+2016/12/20 09:29:26 [notice] 1#1: exit
+2016/12/20 09:29:26 [notice] 1#1: using the "epoll" event method
+2016/12/20 09:29:26 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 09:29:26 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 09:29:26 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 09:29:26 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 09:29:26 [notice] 1#1: start worker processes
+2016/12/20 09:29:26 [notice] 1#1: start worker process 6
+2016/12/20 09:29:36 [debug] 6#6: *1 [lua] finance.lua:368: handle(): select coin_id,coin_num from fin_user_coins where user_id = 'humin' and coin_id = 1;
+2016/12/20 09:29:36 [error] 6#6: *1 lua entry thread aborted: runtime error: /data/finance.lua:477: bad argument #11 to 'format' (no value)
+stack traceback:
+coroutine 0:
+	[C]: in function 'format'
+	/data/finance.lua:477: in function 'handle'
+	/data/common.lua:309: in function 'main'
+	/data/lapi/exchange.lua:23: in function </data/lapi/exchange.lua:1>, client: 192.168.3.82, server: , request: "POST /lapi/exchange HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 09:31:09 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 09:31:09 [notice] 6#6: exiting
+2016/12/20 09:31:09 [notice] 6#6: exit
+2016/12/20 09:31:09 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 09:31:09 [notice] 1#1: worker process 6 exited with code 0
+2016/12/20 09:31:09 [notice] 1#1: exit
+2016/12/20 09:31:10 [notice] 1#1: using the "epoll" event method
+2016/12/20 09:31:10 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 09:31:10 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 09:31:10 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 09:31:10 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 09:31:10 [notice] 1#1: start worker processes
+2016/12/20 09:31:10 [notice] 1#1: start worker process 7
+2016/12/20 09:31:15 [debug] 7#7: *1 [lua] finance.lua:368: handle(): select coin_id,coin_num from fin_user_coins where user_id = 'humin' and coin_id = 1;
+2016/12/20 09:31:32 [error] 7#7: *3 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 2, client: 192.168.4.152, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 09:31:32 [error] 7#7: *3 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {'appid':'nozumbzh7UYuBDHf3sQWIpPb0q8U9S5AlQAA8pEI','sign':'AJPYn8EBOFLur8m8Lusz7fckSPh1D28q4fVLMJ26','role':1,'userid':'53eb35a4c23099762200000f','feetype':1,'dealtype':1,'dealdesc':'微医','source':0,'feedback':1,'random':'20LNFHDCKEWMW7POHH8U9LBC4VLMST49','auth':'595D8EAFD4B23E59A29F04ADBC9332F5'}, client: 192.168.4.152, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 09:31:32 [info] 7#7: *3 client 192.168.4.152 closed keepalive connection (104: Connection reset by peer)
+2016/12/20 09:32:26 [debug] 7#7: *1 [lua] finance.lua:368: handle(): select coin_id,coin_num from fin_user_coins where user_id = 'humin' and coin_id = 1;
+2016/12/20 09:33:06 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 09:33:06 [notice] 7#7: exiting
+2016/12/20 09:33:06 [notice] 7#7: exit
+2016/12/20 09:33:06 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 09:33:06 [notice] 1#1: worker process 7 exited with code 0
+2016/12/20 09:33:06 [notice] 1#1: exit
+2016/12/20 09:33:07 [notice] 1#1: using the "epoll" event method
+2016/12/20 09:33:07 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 09:33:07 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 09:33:07 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 09:33:07 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 09:33:07 [notice] 1#1: start worker processes
+2016/12/20 09:33:07 [notice] 1#1: start worker process 7
+2016/12/20 09:33:11 [debug] 7#7: *1 [lua] finance.lua:368: handle(): select coin_id,coin_num from fin_user_coins where user_id = 'humin' and coin_id = 1;
+2016/12/20 09:33:11 [debug] 7#7: *1 [lua] finance.lua:476: handle(): update fin_user_coins set coin_num = coin_num + 100 where user_id = 'humin' and coin_id = 3;
+ update fin_user_coins set coin_num = coin_num - 10 where user_id = 'humin' and coin_id = 1;
+ insert into fin_user_coins_deallog(description,ip,deal_type,coin_id,deal_coins_before,operate_time,order_no,droi_coins_before,deal_coins_after,droi_coins_after,source,deal_seq,user_id,deal_no,exchange_rate,operator_id) values('兑换','',4,3,5180,now(),'',0,5170,100,0,'111','humin','',10,'3');
+ insert into fin_user_coins_deallog(description,ip,deal_type,coin_id,deal_coins_before,operate_time,order_no,droi_coins_before,deal_coins_after,droi_coins_after,source,deal_seq,user_id,deal_no,exchange_rate,operator_id) values('兑换','',4,1,0,now(),'',5180,100,5170,0,'111','humin','',0.1,'3');
+2016/12/20 09:33:11 [debug] 7#7: *1 [lua] finance.lua:476: handle(): update fin_user_coins set coin_num = coin_num + 0 where user_id = 'humin' and coin_id = 3;
+ update fin_user_coins set coin_num = coin_num - 0 where user_id = 'humin' and coin_id = 1;
+ insert into fin_user_coins_deallog(description,ip,deal_type,coin_id,deal_coins_before,operate_time,order_no,droi_coins_before,deal_coins_after,droi_coins_after,source,deal_seq,user_id,deal_no,exchange_rate,operator_id) values('兑换','',4,3,5000,now(),'',0,5000,0,0,'111','humin','',10,'3');
+ insert into fin_user_coins_deallog(description,ip,deal_type,coin_id,deal_coins_before,operate_time,order_no,droi_coins_before,deal_coins_after,droi_coins_after,source,deal_seq,user_id,deal_no,exchange_rate,operator_id) values('兑换','',4,1,0,now(),'',5000,0,5000,0,'111','humin','',0.1,'3');
+2016/12/20 09:36:41 [info] 7#7: *3 client 192.168.4.152 closed keepalive connection (104: Connection reset by peer)
+2016/12/20 09:37:46 [info] 7#7: *4 client 192.168.4.152 closed keepalive connection (104: Connection reset by peer)
+2016/12/20 09:39:43 [info] 7#7: *7 client 192.168.4.152 closed keepalive connection (104: Connection reset by peer)
+2016/12/20 09:40:38 [info] 7#7: *9 client 192.168.4.152 closed keepalive connection (104: Connection reset by peer)
+2016/12/20 09:41:31 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2016/12/20 09:41:31 [notice] 7#7: exiting
+2016/12/20 09:41:31 [notice] 7#7: exit
+2016/12/20 09:41:31 [notice] 1#1: signal 17 (SIGCHLD) received
+2016/12/20 09:41:31 [notice] 1#1: worker process 7 exited with code 0
+2016/12/20 09:41:31 [notice] 1#1: exit
+2016/12/20 09:41:32 [notice] 1#1: using the "epoll" event method
+2016/12/20 09:41:32 [notice] 1#1: openresty/1.11.2.2
+2016/12/20 09:41:32 [notice] 1#1: built by gcc 5.3.0 (Alpine 5.3.0) 
+2016/12/20 09:41:32 [notice] 1#1: OS: Linux 4.2.0-27-generic
+2016/12/20 09:41:32 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 524288:1048576
+2016/12/20 09:41:32 [notice] 1#1: start worker processes
+2016/12/20 09:41:32 [notice] 1#1: start worker process 7
+2016/12/20 09:41:57 [debug] 7#7: *1 [lua] finance.lua:90: handle(): insert into fin_exrate_config(appid,sign,feedback,auth,userid,source,role,random,dealdesc,dealtype,feetype) values('nozumbzh7UYuBDHf3sQWIpPb0q8U9S5AlQAA8pEI','AJPYn8EBOFLur8m8Lusz7fckSPh1D28q4fVLMJ26',1,'595D8EAFD4B23E59A29F04ADBC9332F5','53eb35a4c23099762200000f',0,1,'20LNFHDCKEWMW7POHH8U9LBC4VLMST49','微医',1,1) ;
+2016/12/20 09:41:59 [info] 7#7: *3 client 192.168.4.152 closed keepalive connection (104: Connection reset by peer)
+2016/12/20 09:46:06 [info] 7#7: *4 client 192.168.4.152 closed keepalive connection (104: Connection reset by peer)
+2016/12/20 09:46:34 [info] 7#7: *6 client 192.168.4.152 closed keepalive connection (104: Connection reset by peer)
+2016/12/20 09:48:50 [error] 7#7: *7 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected object key string but found invalid token at character 285, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 09:48:50 [error] 7#7: *7 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {"tab":"fin_exrate_config",
+"data":{"app_id":"nozumbzh7UYuBDHf3sQWIpPb0q8U9S5AlQAA8pEI","coin_id":4,"coin_name":"xiaoyibi","is_open":1,"app_key":"nozumbzh7UYuBDHf3sQWIpPb0q8U9S5AlQAA8pEI","signature":"nozumbzh7UYuBDHf3sQWIpPb0q8U9S5AlQAA8pEI","exchange_rate":10000,"cash_deposit":100,operator_id:4,"operate_time":"NOW()"
+}
+}, client: 192.168.3.82, server: , request: "POST /lapi/testData HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 09:49:28 [debug] 7#7: *7 [lua] finance.lua:90: handle(): insert into fin_exrate_config(is_open,signature,coin_id,app_key,coin_name,cash_deposit,operator_id,operate_time,exchange_rate,app_id) values(1,'nozumbzh7UYuBDHf3sQWIpPb0q8U9S5AlQAA8pEI',4,'nozumbzh7UYuBDHf3sQWIpPb0q8U9S5AlQAA8pEI','xiaoyibi',100,4,now(),10000,'nozumbzh7UYuBDHf3sQWIpPb0q8U9S5AlQAA8pEI') ;
+2016/12/20 09:52:06 [debug] 7#7: *9 [lua] finance.lua:90: handle(): insert into fin_exrate_config(user_id,operate_time,coin_num,coin_id) values('53eb35a4c23099762200000f',now(),0,4) ;
+2016/12/20 09:53:05 [debug] 7#7: *9 [lua] finance.lua:90: handle(): insert into fin_user_coins(user_id,operate_time,coin_num,coin_id) values('53eb35a4c23099762200000f',now(),0,4) ;
+2016/12/20 10:00:53 [error] 7#7: *11 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected value but found invalid token at character 238, client: 192.168.4.152, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 10:00:53 [error] 7#7: *11 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {"appid":"nozumbzh7UYuBDHf3sQWIpPb0q8U9S5AlQAA8pEI","sign":"AJPYn8EBOFLur8m8Lusz7fckSPh1D28q4fVLMJ26","role":1,"userid":"53eb35a4c23099762200000f","fee":1000,"feetype":1,"dealtype":1,"dealdesc":"微医","source":0,"feedback":1,"orderno":'53eb35a4c23099762200000f#0#183',"random":"61SI7YG049T161DBOE5ET9O1G60O047G","auth":"C3D524C175D8BE75F2E7D5DDC17F91C6"}, client: 192.168.4.152, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 10:00:53 [info] 7#7: *11 client 192.168.4.152 closed keepalive connection (104: Connection reset by peer)
+2016/12/20 10:01:31 [error] 7#7: *12 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected value but found invalid token at character 238, client: 192.168.4.152, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 10:01:31 [error] 7#7: *12 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {"appid":"nozumbzh7UYuBDHf3sQWIpPb0q8U9S5AlQAA8pEI","sign":"AJPYn8EBOFLur8m8Lusz7fckSPh1D28q4fVLMJ26","role":1,"userid":"53eb35a4c23099762200000f","fee":1000,"feetype":1,"dealtype":1,"dealdesc":"微医","source":0,"feedback":1,"orderno":'53eb35a4c23099762200000fAND0AND183',"random":"9T8A6JCN8DO4MP7UQFRF4856DNMNI0XK","auth":"99B4E8D30B01EAE884E8B615CAEF7FB7"}, client: 192.168.4.152, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 10:01:31 [info] 7#7: *12 client 192.168.4.152 closed keepalive connection (104: Connection reset by peer)
+2016/12/20 10:02:04 [error] 7#7: *13 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected value but found invalid token at character 238, client: 192.168.4.152, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 10:02:04 [error] 7#7: *13 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {"appid":"nozumbzh7UYuBDHf3sQWIpPb0q8U9S5AlQAA8pEI","sign":"AJPYn8EBOFLur8m8Lusz7fckSPh1D28q4fVLMJ26","role":1,"userid":"53eb35a4c23099762200000f","fee":1000,"feetype":1,"dealtype":1,"dealdesc":"微医","source":0,"feedback":1,"orderno":'53eb35a4c23099762200000f-0-183',"random":"BFZEZRVV9O9AX4HTWZ2ONXVSOAW9OPRS","auth":"C83EFF9547105C5B38C359ABD7C5B587"}, client: 192.168.4.152, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 10:02:04 [info] 7#7: *13 client 192.168.4.152 closed keepalive connection (104: Connection reset by peer)
+2016/12/20 10:04:25 [error] 7#7: *14 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected value but found invalid token at character 250, client: 192.168.4.152, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 10:04:25 [error] 7#7: *14 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {"appid":"nozumbzh7UYuBDHf3sQWIpPb0q8U9S5AlQAA8pEI","sign":"AJPYn8EBOFLur8m8Lusz7fckSPh1D28q4fVLMJ26","role":1,"userid":"53eb35a4c23099762200000f","fee":1000,"feetype":1,"dealtype":1,"dealdesc":"%E5%BE%AE%E5%8C%BB","source":0,"feedback":1,"orderno":'53eb35a4c23099762200000f-0-183',"random":"B3P0VMHM2RTP1SLGJA3M2OXO6ZZU0LSO","auth":"59B079CF639FAA8934DAB82FADEBD314"}, client: 192.168.4.152, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 10:04:25 [info] 7#7: *14 client 192.168.4.152 closed keepalive connection (104: Connection reset by peer)
+2016/12/20 10:05:43 [error] 7#7: *15 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error: Expected value but found invalid token at character 250, client: 192.168.4.152, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 10:05:43 [error] 7#7: *15 [lua] log.lua:22: log(): [MESSAGE]: request body json decode error(body): {"appid":"nozumbzh7UYuBDHf3sQWIpPb0q8U9S5AlQAA8pEI","sign":"AJPYn8EBOFLur8m8Lusz7fckSPh1D28q4fVLMJ26","role":1,"userid":"53eb35a4c23099762200000f","fee":1000,"feetype":1,"dealtype":1,"dealdesc":"%E5%BE%AE%E5%8C%BB","source":0,"feedback":1,"orderno":'53eb35a4c23099762200000f0183',"random":"5GNB9O2622QWEEGKFKHUGWL6HQYLSDXL","auth":"1A60903EEAB500C41E42A3C9056D3FE8"}, client: 192.168.4.152, server: , request: "POST /lapi/recharge HTTP/1.1", host: "10.10.50.105:8080"
+2016/12/20 10:05:43 [info] 7#7: *15 client 192.168.4.152 closed keepalive connection (104: Connection reset by peer)
+2016/12/20 10:06:19 [info] 7#7: *16 client 192.168.4.152 closed keepalive connection (104: Connection reset by peer)
+2016/12/20 10:08:28 [info] 7#7: *18 client 192.168.4.152 closed keepalive connection (104: Connection reset by peer)
+2016/12/20 12:03:06 [info] 7#7: *20 client 192.168.0.81 closed keepalive connection

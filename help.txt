@@ -1,0 +1,27 @@
+su - postgres
+
+
+密码 123456
+
+
+psql --port 40011 droi_fin_master usr_fin_master -W
+
+
+密码： 111222
+
+
+docker run -d --name="nginx" -p 8080:80 -v /data/user/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf:ro -v /data/user/logs/openresty.log:/usr/local/openresty/nginx/logs -v /data/user/work:/data openresty/openresty
+
+local _CloudUtils = Droi.CloudUtils
+local appId = ""
+local code, devId = _CloudUtils.getDevId(appId)
+if code ~= 0 then
+  devId = nil
+end
+
+
+X-Droi-Api-Key
+
+信息流appkey
+sand: iLfz80fSCQWhUDR6nHZgP0f6LPGTdVrX6QC5wvHgJiyF1SkxSNqt2TLIRadJF_Jj
+prod: 2gxZY0QQ3uVO7kMmGupDa43YM3I9NMntJxczpiYx8PwVn5mYm4pYs3zXFQA8FyYa
